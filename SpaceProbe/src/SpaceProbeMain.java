@@ -31,6 +31,7 @@ import hla.rti1516e.exceptions.RestoreInProgress;
 import hla.rti1516e.exceptions.SaveInProgress;
 import hla.rti1516e.exceptions.UnsupportedCallbackModel;
 import core.SpaceProbeFederate;
+import model.Position;
 //import model.Position;
 import model.SpaceProbe;
 import skf.config.ConfigurationFactory;
@@ -45,7 +46,7 @@ public class SpaceProbeMain {
 		
 		//Position position = new Position(100, 500, 800);
 		
-		SpaceProbe spaceProbe = new SpaceProbe("facens_space_probe", siso.smackdown.frame.FrameType.AitkenBasinLocalFixed.toString(), "SpaceProbe");
+		SpaceProbe spaceProbe = new SpaceProbe("facens_space_probe", siso.smackdown.frame.FrameType.AitkenBasinLocalFixed.toString(), "SpaceProbe", new Position(100, 500, 800));
 		
 		SpaceProbeFederateAmbassador ambassador = new SpaceProbeFederateAmbassador();
 		SpaceProbeFederate federate = new SpaceProbeFederate(ambassador, spaceProbe);
