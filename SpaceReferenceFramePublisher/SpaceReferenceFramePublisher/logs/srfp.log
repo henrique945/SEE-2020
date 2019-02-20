@@ -1,0 +1,36 @@
+2019-02-20 14:53:13.839 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-20 14:53:14.120 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-20 14:53:14.567 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-20 14:53:14.629 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-20 14:53:15.816 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-20 14:53:15.832 [main] INFO  skf.core.SEEHLAModule - Join the federate ' SpaceReferenceFramePublisher ' into the Federation execution ' SEE 2019 '.
+2019-02-20 14:59:55.445 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-20 14:59:55.695 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-20 14:59:56.257 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-20 14:59:56.320 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-20 14:59:57.527 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-20 14:59:57.535 [main] INFO  skf.core.SEEHLAModule - Join the federate ' SpaceReferenceFramePublisher ' into the Federation execution ' SEE 2019 '.
+2019-02-20 15:01:07.382 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-20 15:01:07.607 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-20 15:01:08.010 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-20 15:01:08.088 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-20 15:01:09.251 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-20 15:01:09.259 [main] INFO  skf.core.SEEHLAModule - Join the federate ' SpaceReferenceFramePublisher ' into the Federation execution ' SEE 2019 '.
+2019-02-20 15:02:06.501 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-20 15:02:06.740 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-20 15:02:07.104 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-20 15:02:07.167 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-20 15:02:08.313 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-20 15:02:08.327 [main] INFO  skf.core.SEEHLAModule - Join the federate ' SpaceReferenceFramePublisher ' into the Federation execution ' SEE 2017 '.
+2019-02-20 15:05:37.766 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-20 15:05:38.014 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-20 15:05:38.464 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-20 15:05:38.532 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-20 15:05:39.771 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-20 15:05:39.786 [main] INFO  skf.core.SEEHLAModule - Join the federate ' SpaceReferenceFramePublisher ' into the Federation execution ' SEE 2017 '.
+2019-02-20 15:06:00.839 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-20 15:06:01.073 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-20 15:06:01.480 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-20 15:06:01.557 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-20 15:06:02.760 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-20 15:06:02.760 [main] INFO  skf.core.SEEHLAModule - Join the federate ' SpaceReferenceFramePublisher ' into the Federation execution ' SEE 2017 '.
