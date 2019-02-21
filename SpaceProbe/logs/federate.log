@@ -1,34 +1,136 @@
-2020-03-03 00:55:12.923 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
-2020-03-03 00:55:12.956 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
-2020-03-03 00:55:13.360 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
-2020-03-03 00:55:13.464 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
-2020-03-03 00:55:15.481 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
-2020-03-03 00:55:15.486 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2019 '.
-2019-03-03 01:05:08.274 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
-2019-03-03 01:05:08.306 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
-2019-03-03 01:05:08.555 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
-2019-03-03 01:05:08.647 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
-2019-03-03 01:05:09.858 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
-2019-03-03 01:05:09.870 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2019 '.
-2019-02-21 21:47:45.015 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
-2019-02-21 21:47:45.032 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
-2019-02-21 21:47:45.247 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
-2019-02-21 21:47:45.317 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
-2019-02-21 21:47:46.625 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
-2019-02-21 21:47:46.637 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2019 '.
-2019-02-20 00:38:34.507 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
-2019-02-20 00:38:34.512 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
-2019-02-20 00:38:34.818 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
-2019-02-20 00:38:34.918 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
-2019-02-20 00:38:37.028 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
-2019-02-20 00:38:37.044 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2019 '.
-2019-02-20 16:24:49.589 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
-2019-02-20 16:24:49.604 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
-2019-02-20 16:24:49.861 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
-2019-02-20 16:24:49.935 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
-2019-02-20 16:24:51.192 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
-2019-02-20 16:24:51.197 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2019 '.
-2019-02-20 16:24:51.730 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Incoming Callback Announce Synchronization Point: initialization_completed
-2019-02-20 16:24:51.731 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
-2019-02-20 16:24:51.737 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
-2019-02-20 16:24:51.738 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2019-02-21 00:10:58.222 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-21 00:10:58.238 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-21 00:10:58.473 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-21 00:10:58.550 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-21 00:11:00.034 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-21 00:11:00.049 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2019 '.
+2019-02-21 00:11:00.700 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2019-02-21 00:11:00.714 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2019-02-21 00:11:00.731 [prti1516e: LRC[0x6db9f5a4] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Incoming Callback Announce Synchronization Point: initialization_completed
+2019-02-21 00:11:00.731 [prti1516e: LRC[0x6db9f5a4] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2019-02-21 00:12:33.478 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-21 00:12:33.494 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-21 00:12:33.728 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-21 00:12:33.783 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-21 00:12:35.049 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-21 00:12:35.062 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2019 '.
+2019-02-21 00:12:35.527 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Incoming Callback Announce Synchronization Point: initialization_completed
+2019-02-21 00:12:35.527 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2019-02-21 00:12:35.527 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2019-02-21 00:12:35.527 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2019-02-21 00:18:01.374 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-21 00:18:01.393 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-21 00:18:01.660 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-21 00:18:01.769 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-21 00:18:03.096 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-21 00:18:03.106 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2019 '.
+2019-02-21 00:18:03.529 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2019-02-21 00:18:03.529 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2019-02-21 00:18:03.543 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Incoming Callback Announce Synchronization Point: initialization_completed
+2019-02-21 00:18:03.543 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2019-02-21 00:18:03.575 [main] INFO  skf.core.SEEHLAModule - The Object ' facens_space_probe, state=null, battery_level=null, temperature=-30.0, length=null, width=null, height=null, position=Position [x=100.0- y=500.0- z=800.0] ' has been published.
+2019-02-21 00:18:03.575 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' MoonCentricFixed ' ReferenceFrame
+2019-02-21 00:18:03.604 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1110>, ObjectClassHandle: objectClass<8>, Name: EarthMoonL2Rotating, FederateHandle: null
+2019-02-21 00:18:03.630 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1103>, ObjectClassHandle: objectClass<8>, Name: SunCentricInertial, FederateHandle: null
+2019-02-21 00:18:03.630 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1105>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricRotating, FederateHandle: null
+2019-02-21 00:18:03.630 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1102>, ObjectClassHandle: objectClass<8>, Name: SolarSystemBarycentricInertial, FederateHandle: null
+2019-02-21 00:18:03.630 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1108>, ObjectClassHandle: objectClass<8>, Name: MoonCentricInertial, FederateHandle: null
+2019-02-21 00:18:03.630 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1109>, ObjectClassHandle: objectClass<8>, Name: MoonCentricFixed, FederateHandle: null
+2019-02-21 00:18:03.630 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1104>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricInertial, FederateHandle: null
+2019-02-21 00:18:03.630 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1112>, ObjectClassHandle: objectClass<8>, Name: MarsCentricFixed, FederateHandle: null
+2019-02-21 00:18:03.630 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1107>, ObjectClassHandle: objectClass<8>, Name: EarthCentricFixed, FederateHandle: null
+2019-02-21 00:18:03.630 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1106>, ObjectClassHandle: objectClass<8>, Name: EarthCentricInertial, FederateHandle: null
+2019-02-21 00:18:03.630 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1111>, ObjectClassHandle: objectClass<8>, Name: MarsCentricInertial, FederateHandle: null
+2019-02-21 00:42:24.607 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-21 00:42:24.623 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-21 00:42:24.837 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-21 00:42:24.913 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-21 00:42:26.089 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-21 00:42:26.097 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2019 '.
+2019-02-21 00:42:26.501 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2019-02-21 00:42:26.501 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2019-02-21 00:42:26.517 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Incoming Callback Announce Synchronization Point: initialization_completed
+2019-02-21 00:42:26.517 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2019-02-21 00:42:26.531 [main] INFO  skf.core.SEEHLAModule - The Object ' facens_space_probe, state=null, battery_level=null, temperature=-30.0, length=null, width=null, height=null, position=Position [x=100.0- y=500.0- z=800.0] ' has been published.
+2019-02-21 00:42:26.531 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' MoonCentricFixed ' ReferenceFrame
+2019-02-21 00:42:26.578 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1110>, ObjectClassHandle: objectClass<8>, Name: EarthMoonL2Rotating, FederateHandle: null
+2019-02-21 00:42:26.598 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1103>, ObjectClassHandle: objectClass<8>, Name: SunCentricInertial, FederateHandle: null
+2019-02-21 00:42:26.598 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1105>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricRotating, FederateHandle: null
+2019-02-21 00:42:26.598 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1102>, ObjectClassHandle: objectClass<8>, Name: SolarSystemBarycentricInertial, FederateHandle: null
+2019-02-21 00:42:26.598 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1108>, ObjectClassHandle: objectClass<8>, Name: MoonCentricInertial, FederateHandle: null
+2019-02-21 00:42:26.598 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1109>, ObjectClassHandle: objectClass<8>, Name: MoonCentricFixed, FederateHandle: null
+2019-02-21 00:42:26.598 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1104>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricInertial, FederateHandle: null
+2019-02-21 00:42:26.598 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1112>, ObjectClassHandle: objectClass<8>, Name: MarsCentricFixed, FederateHandle: null
+2019-02-21 00:42:26.598 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1107>, ObjectClassHandle: objectClass<8>, Name: EarthCentricFixed, FederateHandle: null
+2019-02-21 00:42:26.598 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1106>, ObjectClassHandle: objectClass<8>, Name: EarthCentricInertial, FederateHandle: null
+2019-02-21 00:42:26.598 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1111>, ObjectClassHandle: objectClass<8>, Name: MarsCentricInertial, FederateHandle: null
+2019-02-21 00:50:08.963 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-21 00:50:08.978 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-21 00:50:09.166 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-21 00:50:09.225 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-21 00:50:10.443 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-21 00:50:10.451 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2019 '.
+2019-02-21 00:50:11.026 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Incoming Callback Announce Synchronization Point: initialization_completed
+2019-02-21 00:50:11.026 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2019-02-21 00:50:11.042 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2019-02-21 00:50:11.042 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2019-02-21 00:50:11.073 [main] INFO  skf.core.SEEHLAModule - The Object ' facens_space_probe, state=null, battery_level=null, temperature=-30.0, length=null, width=null, height=null, position=Position [x=100.0- y=500.0- z=800.0] ' has been published.
+2019-02-21 00:50:11.073 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' MoonCentricFixed ' ReferenceFrame
+2019-02-21 00:50:11.104 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1110>, ObjectClassHandle: objectClass<8>, Name: EarthMoonL2Rotating, FederateHandle: null
+2019-02-21 00:50:11.119 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1103>, ObjectClassHandle: objectClass<8>, Name: SunCentricInertial, FederateHandle: null
+2019-02-21 00:50:11.119 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1105>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricRotating, FederateHandle: null
+2019-02-21 00:50:11.121 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1102>, ObjectClassHandle: objectClass<8>, Name: SolarSystemBarycentricInertial, FederateHandle: null
+2019-02-21 00:50:11.121 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1108>, ObjectClassHandle: objectClass<8>, Name: MoonCentricInertial, FederateHandle: null
+2019-02-21 00:50:11.121 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1109>, ObjectClassHandle: objectClass<8>, Name: MoonCentricFixed, FederateHandle: null
+2019-02-21 00:50:11.122 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1104>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricInertial, FederateHandle: null
+2019-02-21 00:50:11.122 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1112>, ObjectClassHandle: objectClass<8>, Name: MarsCentricFixed, FederateHandle: null
+2019-02-21 00:50:11.122 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1107>, ObjectClassHandle: objectClass<8>, Name: EarthCentricFixed, FederateHandle: null
+2019-02-21 00:50:11.122 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1106>, ObjectClassHandle: objectClass<8>, Name: EarthCentricInertial, FederateHandle: null
+2019-02-21 00:50:11.122 [prti1516e: LRC[0x68e5eea7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1111>, ObjectClassHandle: objectClass<8>, Name: MarsCentricInertial, FederateHandle: null
+2019-02-21 00:51:35.720 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-21 00:51:35.736 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-21 00:51:36.005 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-21 00:51:36.068 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-21 00:51:37.317 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-21 00:51:37.320 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2019 '.
+2019-02-21 00:51:37.748 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Incoming Callback Announce Synchronization Point: initialization_completed
+2019-02-21 00:51:37.748 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2019-02-21 00:51:37.764 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2019-02-21 00:51:37.764 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2019-02-21 00:51:37.796 [main] INFO  skf.core.SEEHLAModule - The Object ' facens_space_probe, state=null, battery_level=null, temperature=-30.0, length=null, width=null, height=null, position=Position [x=100.0- y=500.0- z=800.0] ' has been published.
+2019-02-21 00:51:37.796 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' MoonCentricFixed ' ReferenceFrame
+2019-02-21 00:51:37.842 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1110>, ObjectClassHandle: objectClass<8>, Name: EarthMoonL2Rotating, FederateHandle: null
+2019-02-21 00:51:37.858 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1103>, ObjectClassHandle: objectClass<8>, Name: SunCentricInertial, FederateHandle: null
+2019-02-21 00:51:37.858 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1105>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricRotating, FederateHandle: null
+2019-02-21 00:51:37.858 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1102>, ObjectClassHandle: objectClass<8>, Name: SolarSystemBarycentricInertial, FederateHandle: null
+2019-02-21 00:51:37.858 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1108>, ObjectClassHandle: objectClass<8>, Name: MoonCentricInertial, FederateHandle: null
+2019-02-21 00:51:37.858 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1109>, ObjectClassHandle: objectClass<8>, Name: MoonCentricFixed, FederateHandle: null
+2019-02-21 00:51:37.874 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1104>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricInertial, FederateHandle: null
+2019-02-21 00:51:37.874 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1112>, ObjectClassHandle: objectClass<8>, Name: MarsCentricFixed, FederateHandle: null
+2019-02-21 00:51:37.874 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1107>, ObjectClassHandle: objectClass<8>, Name: EarthCentricFixed, FederateHandle: null
+2019-02-21 00:51:37.874 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1106>, ObjectClassHandle: objectClass<8>, Name: EarthCentricInertial, FederateHandle: null
+2019-02-21 00:51:37.874 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1111>, ObjectClassHandle: objectClass<8>, Name: MarsCentricInertial, FederateHandle: null
+2019-02-21 00:52:05.949 [main] INFO  skf.core.SEEHLAModule - Unsubscribed from the Subject
+2019-02-21 00:54:01.444 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-21 00:54:01.461 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-21 00:54:01.781 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-21 00:54:01.869 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-21 00:54:03.240 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-21 00:54:03.245 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2019 '.
+2019-02-21 00:54:03.912 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Incoming Callback Announce Synchronization Point: initialization_completed
+2019-02-21 00:54:03.913 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2019-02-21 00:54:03.925 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2019-02-21 00:54:03.926 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2019-02-21 00:54:04.026 [main] INFO  skf.core.SEEHLAModule - The Object ' facens_space_probe, state=null, battery_level=null, temperature=-30.0, length=null, width=null, height=null, position=Position [x=100.0- y=500.0- z=800.0] ' has been published.
+2019-02-21 00:54:04.026 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' MoonCentricFixed ' ReferenceFrame
+2019-02-21 00:54:04.061 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1110>, ObjectClassHandle: objectClass<8>, Name: EarthMoonL2Rotating, FederateHandle: null
+2019-02-21 00:54:04.071 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1103>, ObjectClassHandle: objectClass<8>, Name: SunCentricInertial, FederateHandle: null
+2019-02-21 00:54:04.072 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1105>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricRotating, FederateHandle: null
+2019-02-21 00:54:04.072 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1102>, ObjectClassHandle: objectClass<8>, Name: SolarSystemBarycentricInertial, FederateHandle: null
+2019-02-21 00:54:04.072 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1108>, ObjectClassHandle: objectClass<8>, Name: MoonCentricInertial, FederateHandle: null
+2019-02-21 00:54:04.072 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1109>, ObjectClassHandle: objectClass<8>, Name: MoonCentricFixed, FederateHandle: null
+2019-02-21 00:54:04.072 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1104>, ObjectClassHandle: objectClass<8>, Name: EarthMoonBarycentricInertial, FederateHandle: null
+2019-02-21 00:54:04.073 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1112>, ObjectClassHandle: objectClass<8>, Name: MarsCentricFixed, FederateHandle: null
+2019-02-21 00:54:04.073 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1107>, ObjectClassHandle: objectClass<8>, Name: EarthCentricFixed, FederateHandle: null
+2019-02-21 00:54:04.073 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1106>, ObjectClassHandle: objectClass<8>, Name: EarthCentricInertial, FederateHandle: null
+2019-02-21 00:54:04.073 [prti1516e: LRC[0x2d2ffcb7] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1111>, ObjectClassHandle: objectClass<8>, Name: MarsCentricInertial, FederateHandle: null

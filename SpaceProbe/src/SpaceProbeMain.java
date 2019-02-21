@@ -46,7 +46,7 @@ public class SpaceProbeMain {
 		
 		//Position position = new Position(100, 500, 800);
 		
-		SpaceProbe spaceProbe = new SpaceProbe("facens_space_probe", siso.smackdown.frame.FrameType.AitkenBasinLocalFixed.toString(), "SpaceProbe", new Position(100, 500, 800));
+		SpaceProbe spaceProbe = new SpaceProbe("facens_space_probe", siso.smackdown.frame.FrameType.AitkenBasinLocalFixed.toString(), "SpaceProbe");
 		
 		SpaceProbeFederateAmbassador ambassador = new SpaceProbeFederateAmbassador();
 		SpaceProbeFederate federate = new SpaceProbeFederate(ambassador, spaceProbe);

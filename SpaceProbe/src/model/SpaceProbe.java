@@ -41,9 +41,6 @@ public class SpaceProbe {
 	@Attribute(name = "height", coder = HLAfloat64LECoder.class)
 	private Double height = null;
 	
-	@Attribute(name = "position", coder = HLAPositionCoder.class)
-	private Position position = null;
-	
 	public SpaceProbe(String name, String parent_name, String type) {
 		
 		this.name = name;
@@ -152,16 +149,19 @@ public class SpaceProbe {
 	public void setHeight(Double height) {
 		this.height = height;
 	}
-
+	
+	/**
+	 * @return the position
+	 */
 	public void setPosition(Position position) {
 		Vector3D vector3d = new Vector3D(position.getX(), position.getY(), position.getZ());
 		this.state.getTranslationalState().setPosition(vector3d);
 	}
 
 	public Position getPosition() {
-		Vector3D vector3d = state.getTranslationalState().getPosition();
-		return new Position(vector3d.getX(), vector3d.getY(), vector3d.getZ());
-
+		//Vector3D vector3d = state.getTranslationalState().getPosition();
+		//return new Position(vector3d.getX(), vector3d.getY(), vector3d.getZ());
+		return new Position(100, 500, 800);
 	}
 	
 	public void setRotation(String value) {

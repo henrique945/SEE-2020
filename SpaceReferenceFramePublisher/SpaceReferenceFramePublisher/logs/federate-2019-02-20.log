@@ -1,0 +1,9 @@
+2019-02-20 16:23:48.040 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2019-02-20 16:23:48.275 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2019-02-20 16:23:48.715 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2019-02-20 16:23:48.787 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2019-02-20 16:23:49.973 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2019-02-20 16:23:49.976 [main] INFO  skf.core.SEEHLAModule - Join the federate ' SpaceReferenceFramePublisher ' into the Federation execution ' SEE 2019 '.
+2019-02-20 16:23:50.611 [prti1516e: LRC[0x2abf4075] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2019-02-20 16:23:50.630 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2019-02-20 16:23:50.631 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject

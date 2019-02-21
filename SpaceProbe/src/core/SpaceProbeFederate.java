@@ -7,6 +7,9 @@ import java.util.Observer;
 import java.util.Scanner;
 import java.util.TimeZone;
 
+import hla.rti.FederateOwnsAttributes;
+import hla.rti.InvalidResignAction;
+import hla.rti.OwnershipAcquisitionPending;
 import hla.rti1516e.exceptions.AttributeNotDefined;
 import hla.rti1516e.exceptions.AttributeNotOwned;
 import hla.rti1516e.exceptions.CallNotAllowedFromWithinCallback;
@@ -14,6 +17,7 @@ import hla.rti1516e.exceptions.ConnectionFailed;
 import hla.rti1516e.exceptions.CouldNotCreateLogicalTimeFactory;
 import hla.rti1516e.exceptions.CouldNotOpenFDD;
 import hla.rti1516e.exceptions.ErrorReadingFDD;
+import hla.rti1516e.exceptions.FederateIsExecutionMember;
 import hla.rti1516e.exceptions.FederateNotExecutionMember;
 import hla.rti1516e.exceptions.FederationExecutionDoesNotExist;
 import hla.rti1516e.exceptions.IllegalName;
@@ -83,7 +87,7 @@ public class SpaceProbeFederate extends SEEAbstractFederate implements Observer 
 		// 4. Subscribe the Subject
 		super.subscribeSubject(this);
 		
-		//5 - publish the SpaceProbe
+		/*5 - publish the SpaceProbe
 		super.publishElement(spaceProbe);
 		
 		//6 - subscribe the mooncentricfixed reference
@@ -94,13 +98,32 @@ public class SpaceProbeFederate extends SEEAbstractFederate implements Observer 
 				
 		try {
 					
-			System.out.println("Press any key to disconnect the Rover Federate from the SEE Federation Exectuion");
+			System.out.println("Press any key to disconnect the SpaceProbe Federate from the SEE Federation Exectuion");
 			new Scanner(System.in).next(); 			
 			super.unsubscribeSubject(this);
 		}catch(Exception e) {
 			e.printStackTrace();
-		}
-			
+		}*/
+		
+		// 5. publish our lunarRover object on RTI
+				super.publishElement(spaceProbe);
+				super.subscribeReferenceFrame(FrameType.MoonCentricFixed);
+
+				// 6. Execution-loop
+				super.startExecution();
+
+				try {
+					System.out.println("Press any key to disconnect the federate from the federation execution");
+					new Scanner(System.in).next();
+					stopExecution();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}		
+	}
+
+	private void stopExecution() throws InvalidResignAction, OwnershipAcquisitionPending, FederateOwnsAttributes, FederateNotExecutionMember, NotConnected, RTIinternalError, FederateIsExecutionMember, CallNotAllowedFromWithinCallback, SaveInProgress, RestoreInProgress {
+		super.unsubscribeSubject(this);
+		//super.diconnectFromRTI();
 	}
 
 	@Override

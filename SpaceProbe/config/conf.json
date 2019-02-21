@@ -3,7 +3,7 @@
   "crcHost" : "localhost",
   "crcPort" : 8989,
   "federateName" : "FACENS_Space_Probe",
-  "federateType" : "Rover",
+  "federateType" : "Probe",
   "federateRole" : "LATE",
   "federationName" : "SEE 2019",
   "fomDirectory" : "../FOMs",

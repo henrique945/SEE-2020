@@ -3,10 +3,8 @@ package gov.nasa.ksc.itacl.HLAtoDON.Models;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 import org.siso.spacefom.frame.SpaceTimeCoordinateState;
 
-import ReferenceFrame.coder.SpaceTimeCoordinateStateCoder;
 import gov.nasa.ksc.itacl.Utilities.Utils;
 import gov.nasa.ksc.itacl.hla.Encoders.AttitudeDecoder;
 import gov.nasa.ksc.itacl.hla.Encoders.PositionDecoder;
@@ -28,6 +26,7 @@ import hla.rti1516e.exceptions.ObjectClassNotDefined;
 import hla.rti1516e.exceptions.RTIinternalError;
 import hla.rti1516e.exceptions.RestoreInProgress;
 import hla.rti1516e.exceptions.SaveInProgress;
+import referenceFrame.coder.SpaceTimeCoordinateStateCoder;
 
 public class PhysicalEntity extends MPCObject implements UpdateHLA {
 
