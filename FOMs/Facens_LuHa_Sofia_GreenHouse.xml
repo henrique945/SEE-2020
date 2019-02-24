@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<objectModel xsi:schemaLocation="http://standards.ieee.org/IEEE1516-2010 http://standards.ieee.org/downloads/1516/1516.2-2010/IEEE1516-DIF-2010.xsd" xmlns="http://standards.ieee.org/IEEE1516-2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelIdentification>
+        <name>New Module</name>
+        <type>FOM</type>
+        <version>1.0</version>
+        <securityClassification>unclassified</securityClassification>
+        <purpose></purpose>
+        <applicationDomain></applicationDomain>
+        <description>Description of New Module</description>
+        <useLimitation></useLimitation>
+        <other></other>
+    </modelIdentification>
+    <interactions>
+        <interactionClass>
+            <name>HLAinteractionRoot</name>
+            <interactionClass>
+                <name>RequestResource</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>Request a kind of resource.</semantics>
+                <parameter>
+                    <name>resource</name>
+                    <dataType>Resource</dataType>
+                    <semantics>The resource that is requesting.</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>SendResource</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>Resource that is send.</semantics>
+                <parameter>
+                    <name>resource</name>
+                    <dataType>Resource</dataType>
+                    <semantics>The resource that is sending.</semantics>
+                </parameter>
+            </interactionClass>
+        </interactionClass>
+    </interactions>
+    <dataTypes>
+        <enumeratedDataTypes>
+            <enumeratedData>
+                <name>ResourceType</name>
+                <representation>HLAinteger16LE</representation>
+                <semantics>Define the type of resource exchange of resources.</semantics>
+                <enumerator>
+                    <name>FOOD</name>
+                    <value>1</value>
+                </enumerator>
+                <enumerator>
+                    <name>OXYGEN</name>
+                    <value>2</value>
+                </enumerator>
+                <enumerator>
+                    <name>CARBON_DIOXIDE</name>
+                    <value>3</value>
+                </enumerator>
+            </enumeratedData>
+        </enumeratedDataTypes>
+        <fixedRecordDataTypes>
+            <fixedRecordData>
+                <name>Resource</name>
+                <encoding>HLAfixedRecord</encoding>
+                <semantics></semantics>
+                <field>
+                    <name>quantity</name>
+                    <dataType>HLAinteger64LE</dataType>
+                    <semantics>The amount of the resource</semantics>
+                </field>
+                <field>
+                    <name>resource_type</name>
+                    <dataType>ResourceType</dataType>
+                    <semantics>Type of resource.</semantics>
+                </field>
+            </fixedRecordData>
+        </fixedRecordDataTypes>
+    </dataTypes>
+</objectModel>

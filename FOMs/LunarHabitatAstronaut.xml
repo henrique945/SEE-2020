@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<objectModel xsi:schemaLocation="http://standards.ieee.org/IEEE1516-2010 http://standards.ieee.org/downloads/1516/1516.2-2010/IEEE1516-DIF-2010.xsd" xmlns="http://standards.ieee.org/IEEE1516-2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelIdentification>
+        <name>New Module</name>
+        <type>FOM</type>
+        <version>1.0</version>
+        <securityClassification>unclassified</securityClassification>
+        <purpose></purpose>
+        <applicationDomain></applicationDomain>
+        <description>Description of MyModule</description>
+        <useLimitation></useLimitation>
+        <other></other>
+    </modelIdentification>
+    <objects>
+        <objectClass>
+            <name>HLAobjectRoot</name>
+            <objectClass>
+                <name>PhysicalInterface</name>
+            </objectClass>
+            <objectClass>
+                <name>PhysicalEntity</name>
+                <objectClass>
+                    <name>LunarHabitatAstronaut</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <semantics>The astronaut of Habitat Lunar the FACENS / Brazil</semantics>
+                    <attribute>
+                        <name>pulse_oximetry</name>
+                        <dataType>HLAinteger32BE</dataType>
+                        <updateType>Conditional</updateType>
+                        <updateCondition>When Change</updateCondition>
+                        <ownership>DivestAcquire</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>pulse oximetry is responsible for checking the level of oxygen saturation (SpO2) carried by blood hemoglobins within the individual's arteries. Each hemoglobin has four binding sites for oxygen molecules, so a saturation of 100% indicates that hemoglobin is fully occupied by oxygen molecules. 
+(SpO2)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>heart_rate</name>
+                        <dataType>HLAinteger32BE</dataType>
+                        <updateType>Conditional</updateType>
+                        <updateCondition>When Change</updateCondition>
+                        <ownership>DivestAcquire</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The heart rate still provides a frequency information Astronaut cardiac, so the sensor can identify the Heart through the form of blood movement that interferes directly at the absorption of captured light. 
+(bpm)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>temperature</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Conditional</updateType>
+                        <updateCondition>When Change</updateCondition>
+                        <ownership>DivestAcquire</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>It gives an indication of core body temperature. It is expressed in fahrenheit degree (°F)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>blood_pressure_systolic</name>
+                        <dataType>HLAinteger32BE</dataType>
+                        <updateType>Conditional</updateType>
+                        <updateCondition>When Change</updateCondition>
+                        <ownership>DivestAcquire</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The blood pressure is recorded as two readings; a high systolic pressure, which occurs during the maximal contraction of the heart, and the lower diastolic or resting pressure. A normal blood pressure would be 120 being the systolic over 80, the diastolic.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>blood_pressure_diastolic</name>
+                        <dataType>HLAinteger32BE</dataType>
+                        <updateType>Conditional</updateType>
+                        <updateCondition>When Change</updateCondition>
+                        <ownership>DivestAcquire</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The blood pressure is recorded as two readings; a high systolic pressure, which occurs during the maximal contraction of the heart, and the lower diastolic or resting pressure. A normal blood pressure would be 120 being the systolic over 80, the diastolic.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>amount_oxygen</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Conditional</updateType>
+                        <updateCondition>When change</updateCondition>
+                        <ownership>DivestAcquire</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>Amount of oxygen breathed per second by LuHaAstro (L)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>amount_carbon_dioxide</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Conditional</updateType>
+                        <updateCondition>When change</updateCondition>
+                        <ownership>DivestAcquire</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>Amount of carbon dioxide emitted per second by LuHaAstro (L)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>amount_calories</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Conditional</updateType>
+                        <updateCondition>When change</updateCondition>
+                        <ownership>DivestAcquire</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>Amount of calories spent spends per second spent by LuHaAstro (cal)</semantics>
+                    </attribute>
+                </objectClass>
+            </objectClass>
+        </objectClass>
+    </objects>
+    <interactions>
+        <interactionClass>
+            <name>HLAinteractionRoot</name>
+            <interactionClass>
+                <name>AstronautPath</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send to astronaut the paht that can be utilized.</semantics>
+                <parameter>
+                    <name>Path</name>
+                    <dataType>PositionCollection</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>AstronautID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Name of Astronaut.</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>AstronautFreePath</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send path already free by astronaut.</semantics>
+                <parameter>
+                    <name>FreePosition</name>
+                    <dataType>PositionCollection</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>AstronautID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Astronaut's ID</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>AstronautRequestPath</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics></semantics>
+                <parameter>
+                    <name>AstronautID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>ID of astronaut</semantics>
+                </parameter>
+                <parameter>
+                    <name>TargetRoom</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Room that the astronaut want to go.</semantics>
+                </parameter>
+                <parameter>
+                    <name>CurrentPosition</name>
+                    <dataType>PositionVector</dataType>
+                    <semantics>Current position of the astronaut.</semantics>
+                </parameter>
+            </interactionClass>
+        </interactionClass>
+    </interactions>
+    <dataTypes>
+        <simpleDataTypes/>
+        <enumeratedDataTypes>
+            <enumeratedData>
+                <name>RooftopStatus</name>
+                <representation>HLAinteger16LE</representation>
+                <semantics>This represents the place where the rooftop is.</semantics>
+                <enumerator>
+                    <name>STOPPED_UP</name>
+                    <value>1</value>
+                </enumerator>
+                <enumerator>
+                    <name>MOVING_UP</name>
+                    <value>2</value>
+                </enumerator>
+                <enumerator>
+                    <name>STOPPED_DOWN</name>
+                    <value>3</value>
+                </enumerator>
+                <enumerator>
+                    <name>MOVING_DOWN</name>
+                    <value>4</value>
+                </enumerator>
+            </enumeratedData>
+        </enumeratedDataTypes>
+        <arrayDataTypes>
+            <arrayData>
+                <name>PositionCollection</name>
+                <dataType>PositionVector</dataType>
+                <cardinality>Dynamic</cardinality>
+                <encoding>HLAvariableArray</encoding>
+                <semantics></semantics>
+            </arrayData>
+        </arrayDataTypes>
+        <fixedRecordDataTypes/>
+        <variantRecordDataTypes/>
+    </dataTypes>
+    <notes/>
+</objectModel>

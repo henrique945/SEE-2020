@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<constants>
+	<constant id="PRESSURE">
+		<value>1155</value>
+	</constant>
+	<constant id="TEMPERATURE">
+		<value>63.00</value>
+	</constant>
+	<constant id="AREA">
+		<value>94.25</value>
+	</constant>
+	<constant id="VOLUME">
+		<value>1413.71</value>
+	</constant>
+	<constant id="MAXIMUS">
+		<value>6</value>
+	</constant>
+	<constant id="DIAMETER">
+		<value>15.00</value>
+	</constant>
+	<constant id="DEPTH">
+		<value>15.00</value>
+	</constant>
+</constants>

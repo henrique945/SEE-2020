@@ -1,0 +1,57 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 02.05.2018 22:16:29
+
+newmtl _MinaMarte
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.3843 0.1098 0.0471
+	Kd 0.3843 0.1098 0.0471
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.2075 0.0593 0.0254
+	map_Ka C:\Users\Anchor\Desktop\(30.04) Mina com mapa e sem brilho\marte.tga
+	map_Kd C:\Users\Anchor\Desktop\(30.04) Mina com mapa e sem brilho\marte.tga
+	map_Ks C:\Users\Anchor\Desktop\(30.04) Mina com mapa e sem brilho\marte.tga
+
+newmtl _MinaMaterial__2
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.2980 0.0706 0.0235
+	Kd 0.2980 0.0706 0.0235
+	Ks 0.0362 0.0087 0.0031
+	Ke 0.1043 0.0247 0.0082
+	map_Ka C:\Users\Anchor\Desktop\(30.04) Mina com mapa e sem brilho\marte.tga
+	map_Kd C:\Users\Anchor\Desktop\(30.04) Mina com mapa e sem brilho\marte.tga
+	map_bump -bm 0.3000 C:\Users\Anchor\Desktop\(30.04) Mina com mapa e sem brilho\marte.tga
+	bump -bm 0.3000 C:\Users\Anchor\Desktop\(30.04) Mina com mapa e sem brilho\marte.tga
+
+newmtl _MinaMina
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.7294 0.4039 0.2588
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+
+newmtl _MinaForegrou
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0000 0.0000 0.0000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000

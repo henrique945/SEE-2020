@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<objectModel xsi:schemaLocation="http://standards.ieee.org/IEEE1516-2010 http://standards.ieee.org/downloads/1516/1516.2-2010/IEEE1516-DIF-2010.xsd" xmlns="http://standards.ieee.org/IEEE1516-2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelIdentification>
+        <name>Mars_Miner</name>
+        <type>FOM</type>
+        <version>1.0</version>
+        <modificationDate>2018-02-17</modificationDate>
+        <securityClassification>unclassified</securityClassification>
+        <purpose></purpose>
+        <applicationDomain></applicationDomain>
+        <description>Description of Mars_Miner</description>
+        <useLimitation></useLimitation>
+        <other></other>
+    </modelIdentification>
+    <objects>
+        <objectClass>
+            <name>HLAobjectRoot</name>
+            <objectClass>
+                <name>PhysicalEntity</name>
+                <objectClass>
+                    <name>FACENS_Mars_Miner</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <semantics>The Mars Miner  the FACENS / Brazil</semantics>
+                    <attribute>
+                        <name>battery_level</name>
+                        <dataType>HLAinteger32BE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The battery level ( mA/h ) of the Mars Miner.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>mass</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The mass ( Kg ) of the Mars Miner.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>mars_miner_status</name>
+                        <dataType>MarsMinerStatus</dataType>
+                        <updateType>NA</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This represents loaded status Mars Miners.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>temperature</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition>during initialization</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The temperature (in Celsius) of the Mars Miner.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>speed</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The speed of locomotion ( m/h ) of the Mars Miner</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>maximun_capacity</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition>NA</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The maximum capacity of loaded materials ( Kg ) of the Mars Miner.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>loaded_materials</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The currently loaded materials  ( Kg ) of the Mars Miner</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>height</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The height ( m ) of the Mars Miner.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>width</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The width ( m ) of the Mars Miner.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>length</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The length ( m ) of the Mars Miner.</semantics>
+                    </attribute>
+                </objectClass>
+            </objectClass>
+        </objectClass>
+    </objects>
+    <interactions>
+        <interactionClass>
+            <name>HLAinteractionRoot</name>
+            <interactionClass>
+                <name>RequestGoToOxygenFactory</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics></semantics>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>ID of rover</semantics>
+                </parameter>
+                <parameter>
+                    <name>RawMaterial</name>
+                    <dataType>HLAfloat64LE</dataType>
+                    <semantics></semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>ResponseGoToOxygenFactory</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send the permission for rover.</semantics>
+                <parameter>
+                    <name>PermissionLevel</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Name of rover.</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>RequestOxygenFactoryRoute</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics></semantics>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>ID of rover</semantics>
+                </parameter>
+                <parameter>
+                    <name>CurrentPosition</name>
+                    <dataType>PositionVector</dataType>
+                    <semantics>Current position of the rover.</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>ResponseOxygenFactoryRoute</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send to rover the paht that can be utilized.</semantics>
+                <parameter>
+                    <name>Path</name>
+                    <dataType>PositionCollection</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Name of rover.</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>FinishOxygenFactoryRoute</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send path already free by rover.</semantics>
+                <parameter>
+                    <name>FreePosition</name>
+                    <dataType>PositionCollection</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Rover's ID</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>RoverPath</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send to rover the paht that can be utilized.</semantics>
+                <parameter>
+                    <name>Path</name>
+                    <dataType>PositionCollection</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Name of rover.</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>RoverFreePath</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send path already free by rover.</semantics>
+                <parameter>
+                    <name>FreePosition</name>
+                    <dataType>PositionCollection</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Rover's ID</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>RoverRequestPath</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics></semantics>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>ID of rover</semantics>
+                </parameter>
+                <parameter>
+                    <name>TargetPosition</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Position that the rover want to go.</semantics>
+                </parameter>
+                <parameter>
+                    <name>CurrentPosition</name>
+                    <dataType>PositionVector</dataType>
+                    <semantics>Current position of the rover.</semantics>
+                </parameter>
+            </interactionClass>
+			 <interactionClass>
+                <name>ResponseFinderNewRoute</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send to rover the paht that can be utilized.</semantics>
+                <parameter>
+                    <name>Path</name>
+                    <dataType>PositionCollection</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Name of rover.</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>FinishFinderNewRoute</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send path already free by rover.</semantics>
+                <parameter>
+                    <name>FreePosition</name>
+                    <dataType>PositionCollection</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Rover's ID</semantics>
+                </parameter>
+            </interactionClass>
+        </interactionClass>
+    </interactions>
+    <switches>
+        <autoProvide isEnabled="false"/>
+        <conveyRegionDesignatorSets isEnabled="false"/>
+        <conveyProducingFederate isEnabled="false"/>
+        <attributeScopeAdvisory isEnabled="false"/>
+        <attributeRelevanceAdvisory isEnabled="false"/>
+        <objectClassRelevanceAdvisory isEnabled="false"/>
+        <interactionRelevanceAdvisory isEnabled="false"/>
+        <serviceReporting isEnabled="false"/>
+        <exceptionReporting isEnabled="false"/>
+        <delaySubscriptionEvaluation isEnabled="false"/>
+        <automaticResignAction resignAction="CancelThenDeleteThenDivest"/>
+    </switches>
+    <dataTypes>
+        <simpleDataTypes/>
+        <enumeratedDataTypes>
+            <enumeratedData>
+                <name>MarsMinerStatus</name>
+                <representation>HLAinteger16LE</representation>
+                <semantics>This represents the status the load Mars Miner.</semantics>
+                <enumerator>
+                    <name>FULL_LOAD</name>
+                    <value>1</value>
+                </enumerator>
+                <enumerator>
+                    <name>EMPTY_LOAD</name>
+                    <value>2</value>
+                </enumerator>
+                <enumerator>
+                    <name>LOADING</name>
+                    <value>3</value>
+                </enumerator>
+                <enumerator>
+                    <name>UNLOADING</name>
+                    <value>4</value>
+                </enumerator>
+            </enumeratedData>
+        </enumeratedDataTypes>
+        <arrayDataTypes>
+            <arrayData>
+                <name>PositionCollection</name>
+                <dataType>PositionVector</dataType>
+                <cardinality>Dynamic</cardinality>
+                <encoding>HLAvariableArray</encoding>
+                <semantics></semantics>
+            </arrayData>
+        </arrayDataTypes>
+        <fixedRecordDataTypes/>
+        <variantRecordDataTypes/>
+    </dataTypes>
+    <notes/>
+</objectModel>

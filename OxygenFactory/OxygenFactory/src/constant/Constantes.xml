@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<constants>
+	<constant id="MAX_WATER_VOLUME">
+		<value>200.00</value>
+	</constant>
+	<constant id="CURRENT_WATER_VOLUME">
+		<value>200.00</value>
+	</constant>
+	<constant id="MAX_OXYGEN_VOLUME">
+		<value>200.00</value>
+	</constant>
+	<constant id="CURRENT_OXYGEN_VOLUME">
+		<value>200.00</value>
+	</constant>
+	<constant id="MAX_RAW_MATERIAL_VOLUME">
+		<value>200.00</value>
+	</constant>
+	<constant id="CURRENT_RAW_MATERIAL_VOLUME">
+		<value>200.00</value>
+	</constant>
+	<constant id="ENERGY_CONSUMPTION">
+		<value>200.00</value>
+	</constant>
+	<constant id="OXYGEN_PRODUCTION">
+		<value>200.00</value>
+	</constant>
+	<constant id="FACTORY_AREA">
+		<value>2000.00</value>
+	</constant>
+	<constant id="FACTORY_VOLUME">
+		<value>12000.00</value>
+	</constant>
+	<constant id="TEMPERATURE">
+		<value>200.00</value>
+	</constant>
+	<constant id="PRESSURE">
+		<value>200.00</value>
+	</constant>
+	<constant id="HEIGHT">
+		<value>20.00</value>
+	</constant>
+	<constant id="LOWEST_HEIGHT">
+		<value>30.00</value>
+	</constant>
+	
+	<!-- Attribute of ref energy consumption -->
+	<constant id="FACTORY_ENERGY_CONSUMPTION">
+		<value>100.00</value>
+	</constant>
+		<constant id="ENERGY_CONSUMPTION_PER_MINUTE">
+		<value>5.00</value>
+	</constant>
+	
+	<!-- Attribute of ref mult oxygen -->
+	<constant id="OXYGEN_MULT">
+		<value>0.25</value>
+	</constant>
+	<constant id="DISPLACEMENT">
+		<value>1</value>
+	</constant>
+	
+</constants>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<objectModel xsi:schemaLocation="http://standards.ieee.org/IEEE1516-2010 http://standards.ieee.org/downloads/1516/1516.2-2010/IEEE1516-DIF-2010.xsd" xmlns="http://standards.ieee.org/IEEE1516-2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelIdentification>
+        <name>New Module</name>
+        <type>FOM</type>
+        <version>1.0</version>
+        <securityClassification>unclassified</securityClassification>
+        <purpose></purpose>
+        <applicationDomain></applicationDomain>
+        <description>Description of MyModule</description>
+        <useLimitation></useLimitation>
+        <other></other>
+    </modelIdentification>
+    <objects>
+        <objectClass>
+            <name>HLAobjectRoot</name>
+            <objectClass>
+                <name>PhysicalInterface</name>
+            </objectClass>
+            <objectClass>
+                <name>PhysicalEntity</name>
+                <objectClass>
+                    <name>DynamicalEntity</name>
+                </objectClass>
+                <objectClass>
+                    <name>Luha</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <semantics></semantics>
+                    <attribute>
+                        <name>pressure</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition>during initialization</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The pressure (in Pascal) of the Lunar Habitat.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>temperature</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition>during initialization</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The temperature (in Celsius) of the Lunar Habitat.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>area</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>NA</updateType>
+                        <updateCondition>during initialization</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The area (in m²) of the Lunar Habitat.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>volume</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>NA</updateType>
+                        <updateCondition>during initialization</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The volume (in m³) of the Lunar Habitat.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>energy_consumption</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The energy comsuption (in Watts) of the Lunar Habitat since the beggining of the simulation.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>oxygen_consumption</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The oxygen comsuption of the Lunar Habitat since the beggining of the simulation.(L)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>carbon_dioxide_emission</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The carbon dioxide emission in Liters(L)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>air_humidity</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition>during initialization</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The air humidity (in ) of the Lunar Habitat</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>calories_consumption</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The calories comsuption (in cal) of the Lunar Habitat since the beggining of the simulation.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>maximun_capacity</name>
+                        <dataType>HLAinteger16LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition>NA</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The maximum number of astronauts the Lunar Habitat can house.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>number_of_astrounauts</name>
+                        <dataType>HLAinteger16LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The number of astronauts currently inside of the Lunar Habitat.</semantics>
+                    </attribute>
+                </objectClass>
+                <objectClass>
+                    <name>LuhaRooftop</name>
+                    <sharing>Neither</sharing>
+                    <semantics>Represents luha's rooftop.</semantics>
+                    <attribute>
+                        <name>rooftopStatus</name>
+                        <dataType>RooftopStatus</dataType>
+                        <updateType>NA</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This represents where rooftop is.</semantics>
+                    </attribute>
+                </objectClass>
+            </objectClass>
+        </objectClass>
+    </objects>
+    <interactions>
+        <interactionClass>
+            <name>HLAinteractionRoot</name>
+        </interactionClass>
+    </interactions>
+    <dataTypes>
+        <simpleDataTypes/>
+        <enumeratedDataTypes/>
+        <arrayDataTypes/>
+        <fixedRecordDataTypes/>
+        <variantRecordDataTypes/>
+    </dataTypes>
+    <notes/>
+</objectModel>

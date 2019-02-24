@@ -1,0 +1,100 @@
+package model;
+
+
+import org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
+import org.siso.spacefom.frame.SpaceTimeCoordinateState;
+
+import coder.RooftopStatusCoder;
+import coder.SpaceTimeCoordinateStateCoder;
+import constant.MarsHabitatConstant;
+import skf.coder.HLAunicodeStringCoder;
+import skf.model.object.annotations.Attribute;
+import skf.model.object.annotations.ObjectClass;
+
+@ObjectClass(name = "PhysicalEntity.LuhaRooftop")
+public class MarsHabitatRooftop {
+
+	@Attribute(name = "name", coder = HLAunicodeStringCoder.class)
+	private String name = null;
+
+	@Attribute(name = "parent_reference_frame", coder = HLAunicodeStringCoder.class)
+	private String parent_name = null;
+
+	@Attribute(name = "state", coder = SpaceTimeCoordinateStateCoder.class)
+	private SpaceTimeCoordinateState state = null;
+
+	@Attribute(name = "type", coder = HLAunicodeStringCoder.class)
+	private String type = null;
+
+	@Attribute(name="rooftopStatus", coder = RooftopStatusCoder.class)
+	private RooftopStatus rooftopStatus;
+
+	public MarsHabitatRooftop() {
+	}
+
+	public MarsHabitatRooftop(String name, String parent_name, Position position, String type) {
+		this.name = name;
+		this.parent_name = parent_name;
+		this.state = new SpaceTimeCoordinateState();
+		this.setPosition(position);
+		this.state.getRotationState().setAttitudeQuaternion(MarsHabitatConstant.ROTATION_MARS_HABITAT);
+		this.type = type;
+		this.rooftopStatus = RooftopStatus.STOPPED_UP;
+	}
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getParent_name() {
+		return parent_name;
+	}
+
+	public void setParent_name(String parent_name) {
+		this.parent_name = parent_name;
+	}
+
+	public Position getPosition() {
+		Vector3D vector3d = state.getTranslationalState().getPosition();
+		return new Position(vector3d.getX(), vector3d.getY(), vector3d.getZ());
+	}
+
+	public void setPosition(Position position) {
+		Vector3D vector3d = new Vector3D(position.getX(), position.getY(), position.getZ());
+		this.state.getTranslationalState().setPosition(vector3d);
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public SpaceTimeCoordinateState getState() {
+		return state;
+	}
+
+	public void setState(SpaceTimeCoordinateState state) {
+		this.state = state;
+	}	
+
+	public RooftopStatus getRooftopStatus() {
+		return rooftopStatus;
+	}
+
+	public void setRooftopStatus(RooftopStatus rooftopStatus) {
+		this.rooftopStatus = rooftopStatus;
+	}
+
+	@Override
+	public String toString() {
+		return "MarsHabitatRooftop [name=" + name + ", parent_name=" + parent_name + ", state=" + state + ", type="
+				+ type + ", rooftopStatus=" + rooftopStatus + "]";
+	}
+	
+}

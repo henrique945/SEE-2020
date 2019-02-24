@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<objectModel xsi:schemaLocation="http://standards.ieee.org/IEEE1516-2010 http://standards.ieee.org/downloads/1516/1516.2-2010/IEEE1516-DIF-2010.xsd" xmlns="http://standards.ieee.org/IEEE1516-2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelIdentification>
+        <name>New Module</name>
+        <type>FOM</type>
+        <version>1.0</version>
+        <securityClassification>unclassified</securityClassification>
+        <purpose></purpose>
+        <applicationDomain></applicationDomain>
+        <description>Description of New Module</description>
+        <useLimitation></useLimitation>
+        <other></other>
+    </modelIdentification>
+    <objects>
+        <objectClass>
+            <name>HLAobjectRoot</name>
+            <objectClass>
+                <name>PhysicalEntity</name>
+                <objectClass>
+                    <name>FACENS_Excavation_Mine</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <semantics>The Excavation Mine the FACENS / Brazil</semantics>
+                    <attribute>
+                        <name>depth</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The depth (in m) of the Excavation Mine.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>diameter</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The diameter (in m) of the Excavation Mine.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>number_of_mars_miner</name>
+                        <dataType>HLAinteger16LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The number of marsMiner currently inside of the Mine.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>maximun_capacity</name>
+                        <dataType>HLAinteger16LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition>NA</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The maximum number of MarsMiner in enter the Mine.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>temperature</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition>during initialization</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The temperature (in Celsius) of the Excavation Mine.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>pressure</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition>during initialization</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The pressure (in Pascal) of the Excavation Mine.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>area</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>NA</updateType>
+                        <updateCondition>during initialization</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The area (in m²) of the Excavation Mine.</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>volume</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>NA</updateType>
+                        <updateCondition>during initialization</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The volume (in m³) of the Excavation Mine.</semantics>
+                    </attribute>
+                </objectClass>
+            </objectClass>
+        </objectClass>
+    </objects>
+    <interactions>
+        <interactionClass>
+            <name>HLAinteractionRoot</name>
+        </interactionClass>
+    </interactions>
+    <switches>
+        <autoProvide isEnabled="false"/>
+        <conveyRegionDesignatorSets isEnabled="false"/>
+        <conveyProducingFederate isEnabled="false"/>
+        <attributeScopeAdvisory isEnabled="false"/>
+        <attributeRelevanceAdvisory isEnabled="false"/>
+        <objectClassRelevanceAdvisory isEnabled="false"/>
+        <interactionRelevanceAdvisory isEnabled="false"/>
+        <serviceReporting isEnabled="false"/>
+        <exceptionReporting isEnabled="false"/>
+        <delaySubscriptionEvaluation isEnabled="false"/>
+        <automaticResignAction resignAction="CancelThenDeleteThenDivest"/>
+    </switches>
+    <dataTypes>
+        <simpleDataTypes/>
+        <enumeratedDataTypes>
+            <enumeratedData>
+                <name>MarsMinerStatus</name>
+                <representation>HLAinteger16LE</representation>
+                <semantics>This represents the status the load Mars Miner.</semantics>
+                <enumerator>
+                    <name>FULL_LOAD</name>
+                    <value>1</value>
+                </enumerator>
+                <enumerator>
+                    <name>EMPTY_LOAD</name>
+                    <value>2</value>
+                </enumerator>
+                <enumerator>
+                    <name>LOADING</name>
+                    <value>3</value>
+                </enumerator>
+                <enumerator>
+                    <name>UNLOADING</name>
+                    <value>4</value>
+                </enumerator>
+            </enumeratedData>
+        </enumeratedDataTypes>
+        <arrayDataTypes/>
+        <fixedRecordDataTypes/>
+        <variantRecordDataTypes/>
+    </dataTypes>
+    <notes/>
+</objectModel>

@@ -1,0 +1,98 @@
+2017-03-03 11:50:48.612 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2017-03-03 11:50:52.793 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.3.2 , hlaVersion: HLA IEEE 1516-2010
+2017-03-03 11:50:52.904 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2017-03-03 11:50:52.905 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2017-03-03 11:50:54.392 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2017-03-03 11:50:54.394 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_LuHa_Base ' into the Federation execution ' SEE 2017 '.
+2017-03-03 11:50:55.415 [main] INFO  skf.core.SEEHLAModule - Set up time management.
+2017-03-03 11:50:55.416 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2017-03-03 11:50:55.416 [main] INFO  skf.core.SEEHLAModule - Time constrained enabled.
+2017-03-03 11:50:55.425 [prti1516e: LRC[0x4550bb58] Federate service] INFO  federate.LunarHabitatBaseFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2017-03-03 11:50:56.255 [main] INFO  skf.core.SEEHLAModule - The ObjectClass ' class objectClass.ExecutionConfiguration ' has been subscribed.
+2017-03-03 11:50:57.217 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2017-03-03 11:50:57.327 [main] INFO  skf.core.SEEHLAModule - The Object ' model.LunarHabitatBase@50dfbc58 ' has been published.
+2017-03-03 11:50:57.327 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' MoonCentricFixed ' ReferenceFrame
+2017-03-03 11:50:57.346 [main] INFO  skf.core.SEEHLAModule - The InteractionClass ' class interaction.MessageTx ' has been subscribed.
+2017-03-03 11:50:57.347 [main] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@9573584 ' has been published.
+2017-03-03 11:51:05.078 [prti1516e: LRC[0x4550bb58] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@9573584 ' has been updated on the HLA/RTI platform.
+2017-03-03 11:55:39.401 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2017-03-03 11:55:40.432 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.3.2 , hlaVersion: HLA IEEE 1516-2010
+2017-03-03 11:55:40.459 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2017-03-03 11:55:40.459 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2017-03-03 11:55:41.876 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2017-03-03 11:55:41.877 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_LuHa_Base ' into the Federation execution ' SEE 2017 '.
+2017-03-03 11:55:42.664 [prti1516e: LRC[0x2b662a77] Federate service] INFO  federate.LunarHabitatBaseFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2017-03-03 11:55:42.681 [main] INFO  skf.core.SEEHLAModule - Set up time management.
+2017-03-03 11:55:42.681 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2017-03-03 11:55:42.681 [main] INFO  skf.core.SEEHLAModule - Time constrained enabled.
+2017-03-03 11:55:43.234 [main] INFO  skf.core.SEEHLAModule - The ObjectClass ' class objectClass.ExecutionConfiguration ' has been subscribed.
+2017-03-03 11:55:44.227 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2017-03-03 11:55:44.327 [main] INFO  skf.core.SEEHLAModule - The Object ' model.LunarHabitatBase@1672fe87 ' has been published.
+2017-03-03 11:55:44.327 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' MoonCentricFixed ' ReferenceFrame
+2017-03-03 11:55:44.335 [main] INFO  skf.core.SEEHLAModule - The InteractionClass ' class interaction.MessageTx ' has been subscribed.
+2017-03-03 11:55:44.349 [main] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@5082d622 ' has been published.
+2017-03-03 11:56:16.622 [prti1516e: LRC[0x2b662a77] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@5082d622 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:07:48.665 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2017-03-03 12:07:49.579 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.3.2 , hlaVersion: HLA IEEE 1516-2010
+2017-03-03 12:07:49.606 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2017-03-03 12:07:49.606 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2017-03-03 12:07:51.041 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2017-03-03 12:07:51.042 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_LuHa_Base ' into the Federation execution ' SEE 2017 '.
+2017-03-03 12:07:51.723 [prti1516e: LRC[0x5c33f1a9] Federate service] INFO  federate.LunarHabitatBaseFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2017-03-03 12:07:51.727 [main] INFO  skf.core.SEEHLAModule - Set up time management.
+2017-03-03 12:07:51.727 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2017-03-03 12:07:51.728 [main] INFO  skf.core.SEEHLAModule - Time constrained enabled.
+2017-03-03 12:07:52.546 [main] INFO  skf.core.SEEHLAModule - The ObjectClass ' class objectClass.ExecutionConfiguration ' has been subscribed.
+2017-03-03 12:07:53.530 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2017-03-03 12:07:53.639 [main] INFO  skf.core.SEEHLAModule - The Object ' model.LunarHabitatBase@1b45c0e ' has been published.
+2017-03-03 12:07:53.640 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' MoonCentricFixed ' ReferenceFrame
+2017-03-03 12:07:53.650 [main] INFO  skf.core.SEEHLAModule - The InteractionClass ' class interaction.MessageTx ' has been subscribed.
+2017-03-03 12:07:53.662 [main] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@302f7971 ' has been published.
+2017-03-03 12:08:04.973 [prti1516e: LRC[0x5c33f1a9] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@302f7971 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:08:13.074 [prti1516e: LRC[0x5c33f1a9] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@302f7971 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:08:18.872 [prti1516e: LRC[0x5c33f1a9] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@302f7971 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:13:05.978 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2017-03-03 12:13:06.427 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.3.2 , hlaVersion: HLA IEEE 1516-2010
+2017-03-03 12:13:06.429 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2017-03-03 12:13:06.430 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2017-03-03 12:13:07.031 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2017-03-03 12:13:07.033 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_LuHa_Base ' into the Federation execution ' SEE 2017 '.
+2017-03-03 12:13:07.365 [main] INFO  skf.core.SEEHLAModule - Set up time management.
+2017-03-03 12:13:07.365 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2017-03-03 12:13:07.365 [main] INFO  skf.core.SEEHLAModule - Time constrained enabled.
+2017-03-03 12:13:07.372 [prti1516e: LRC[0x5c33f1a9] Federate service] INFO  federate.LunarHabitatBaseFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2017-03-03 12:13:07.867 [main] INFO  skf.core.SEEHLAModule - The ObjectClass ' class objectClass.ExecutionConfiguration ' has been subscribed.
+2017-03-03 12:13:08.947 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2017-03-03 12:13:08.974 [main] INFO  skf.core.SEEHLAModule - The Object ' model.LunarHabitatBase@b978d10 ' has been published.
+2017-03-03 12:13:08.974 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' MoonCentricFixed ' ReferenceFrame
+2017-03-03 12:13:08.979 [main] INFO  skf.core.SEEHLAModule - The InteractionClass ' class interaction.MessageTx ' has been subscribed.
+2017-03-03 12:13:08.980 [main] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@6bf08014 ' has been published.
+2017-03-03 12:13:21.732 [prti1516e: LRC[0x5c33f1a9] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@6bf08014 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:13:29.825 [prti1516e: LRC[0x5c33f1a9] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@6bf08014 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:13:35.479 [prti1516e: LRC[0x5c33f1a9] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@6bf08014 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:14:31.722 [prti1516e: LRC[0x5c33f1a9] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@6bf08014 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:14:45.223 [prti1516e: LRC[0x5c33f1a9] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@6bf08014 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:14:53.722 [prti1516e: LRC[0x5c33f1a9] Federate service] INFO  federate.LunarHabitatBaseFederateAmbassador - Synchronization point announced: MTR_SHUTDOWN
+2017-03-03 12:14:55.419 [Thread-3] INFO  skf.core.SEEHLAModule - Disconnecting the federate from the federation execution.
+2017-03-03 12:14:55.473 [Thread-3] INFO  skf.core.SEEHLAModule - The federate has been disconnected from the federation execution.
+2017-03-03 12:18:16.391 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2017-03-03 12:18:18.889 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.3.2 , hlaVersion: HLA IEEE 1516-2010
+2017-03-03 12:18:18.957 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2017-03-03 12:18:18.957 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2017-03-03 12:18:21.882 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2017-03-03 12:18:21.884 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_LuHa_Base ' into the Federation execution ' SEE 2017 '.
+2017-03-03 12:18:22.757 [main] INFO  skf.core.SEEHLAModule - Set up time management.
+2017-03-03 12:18:22.757 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2017-03-03 12:18:22.757 [main] INFO  skf.core.SEEHLAModule - Time constrained enabled.
+2017-03-03 12:18:22.811 [prti1516e: LRC[0x2b662a77] Federate service] INFO  federate.LunarHabitatBaseFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2017-03-03 12:18:23.056 [main] INFO  skf.core.SEEHLAModule - The ObjectClass ' class objectClass.ExecutionConfiguration ' has been subscribed.
+2017-03-03 12:18:24.177 [main] INFO  skf.core.SEEHLAModule - The Interaction ' ModeTransitionRequest [execution_mode=null] ' has been published.
+2017-03-03 12:18:24.292 [main] INFO  skf.core.SEEHLAModule - The Object ' model.LunarHabitatBase@727eb8cb ' has been published.
+2017-03-03 12:18:24.292 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' MoonCentricFixed ' ReferenceFrame
+2017-03-03 12:18:24.299 [main] INFO  skf.core.SEEHLAModule - The InteractionClass ' class interaction.MessageTx ' has been subscribed.
+2017-03-03 12:18:24.301 [main] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@50dfbc58 ' has been published.
+2017-03-03 12:19:06.229 [prti1516e: LRC[0x2b662a77] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@50dfbc58 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:19:11.833 [prti1516e: LRC[0x2b662a77] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@50dfbc58 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:19:17.215 [prti1516e: LRC[0x2b662a77] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@50dfbc58 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:19:31.057 [prti1516e: LRC[0x2b662a77] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@50dfbc58 ' has been updated on the HLA/RTI platform.
+2017-03-03 12:19:44.430 [prti1516e: LRC[0x2b662a77] Federate service] INFO  skf.core.SEEHLAModule - The Interaction ' interaction.MessageRx@50dfbc58 ' has been updated on the HLA/RTI platform.

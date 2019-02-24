@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<objectModel xsi:schemaLocation="http://standards.ieee.org/IEEE1516-2010 http://standards.ieee.org/downloads/1516/1516.2-2010/IEEE1516-DIF-2010.xsd" xmlns="http://standards.ieee.org/IEEE1516-2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelIdentification>
+        <name>Water Finder</name>
+        <type>FOM</type>
+        <version>1.0</version>
+        <modificationDate>2018-02-17</modificationDate>
+        <securityClassification>unclassified</securityClassification>
+        <purpose></purpose>
+        <applicationDomain></applicationDomain>
+        <description>Description of Water_Finder</description>
+        <useLimitation></useLimitation>
+        <other></other>
+    </modelIdentification>
+    <objects>
+        <objectClass>
+            <name>HLAobjectRoot</name>
+            <objectClass>
+                <name>PhysicalEntity</name>
+                <objectClass>
+                    <name>FACENS_Water_Finder</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <semantics>The Water Finder - The FACENS /Brazil</semantics>
+                    <attribute>
+                        <name>battey_level</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the battery level, the unity is Amper (A)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>mass</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the mass o the WAFI, the unity is Kilograms (Kg)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>total_tubes</name>
+                        <dataType>HLAinteger32BE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the total of tubes, the unity is number of tubes (T)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>remaning_tubes</name>
+                        <dataType>HLAinteger32BE</dataType>
+                        <updateType>Conditional</updateType>
+                        <updateCondition>If a tube get full or a tube get empity, update this information</updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the total of tubes,that still empty on the WAFI, when this number comes to zero (0) the WAFI is full of water, the unity is number of tubes (T)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>temperature</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the temperature of the WAFI, the unity used is Kelvin (K)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>length</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>length of the rover</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>width</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>width of the rover</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>height</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>NA</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>heigth of the rover</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>speed</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>Speed</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>water_finder_status</name>
+                        <dataType>WaterFinderStatus</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This represents loaded status Water Finder.</semantics>
+                    </attribute>
+                </objectClass>
+            </objectClass>
+        </objectClass>
+    </objects>
+    <interactions>
+        <interactionClass>
+            <name>HLAinteractionRoot</name>
+            <interactionClass>
+                <name>RequestFinderNewRoute</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics></semantics>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>ID of rover</semantics>
+                </parameter>
+                <parameter>
+                    <name>CurrentPosition</name>
+                    <dataType>PositionVector</dataType>
+                    <semantics>Current position of the rover.</semantics>
+                </parameter>
+                <parameter>
+                    <name>TargetPosition</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Position that the rover want to go.</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>ResponseFinderNewRoute</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send to rover the paht that can be utilized.</semantics>
+                <parameter>
+                    <name>Path</name>
+                    <dataType>PositionCollection</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Name of rover.</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>RequestOxygenFactoryRoute</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics></semantics>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>ID of rover</semantics>
+                </parameter>
+                <parameter>
+                    <name>CurrentPosition</name>
+                    <dataType>PositionVector</dataType>
+                    <semantics>Current position of the rover.</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>ResponseOxygenFactoryRoute</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send to rover the paht that can be utilized.</semantics>
+                <parameter>
+                    <name>Path</name>
+                    <dataType>PositionCollection</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Name of rover.</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>FinishOxygenFactoryRoute</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send path already free by rover.</semantics>
+                <parameter>
+                    <name>FreePosition</name>
+                    <dataType>PositionCollection</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Rover's ID</semantics>
+                </parameter>
+            </interactionClass>
+            <interactionClass>
+                <name>FinishFinderNewRoute</name>
+                <sharing>PublishSubscribe</sharing>
+                <transportation>HLAreliable</transportation>
+                <order>Receive</order>
+                <semantics>This interaction send path already free by rover.</semantics>
+                <parameter>
+                    <name>FreePosition</name>
+                    <dataType>PositionCollection</dataType>
+                    <semantics></semantics>
+                </parameter>
+                <parameter>
+                    <name>RoverID</name>
+                    <dataType>HLAunicodeString</dataType>
+                    <semantics>Rover's ID</semantics>
+                </parameter>
+            </interactionClass>
+        </interactionClass>
+    </interactions>
+    <switches>
+        <autoProvide isEnabled="false"/>
+        <conveyRegionDesignatorSets isEnabled="false"/>
+        <conveyProducingFederate isEnabled="false"/>
+        <attributeScopeAdvisory isEnabled="false"/>
+        <attributeRelevanceAdvisory isEnabled="false"/>
+        <objectClassRelevanceAdvisory isEnabled="false"/>
+        <interactionRelevanceAdvisory isEnabled="false"/>
+        <serviceReporting isEnabled="false"/>
+        <exceptionReporting isEnabled="false"/>
+        <delaySubscriptionEvaluation isEnabled="false"/>
+        <automaticResignAction resignAction="CancelThenDeleteThenDivest"/>
+    </switches>
+    <dataTypes>
+        <simpleDataTypes/>
+        <enumeratedDataTypes>
+            <enumeratedData>
+                <name>WaterFinderStatus</name>
+                <representation>HLAinteger16LE</representation>
+                <semantics>This represents the status the load Water Finder.</semantics>
+                <enumerator>
+                    <name>FULL_LOAD</name>
+                    <value>1</value>
+                </enumerator>
+                <enumerator>
+                    <name>EMPTY_LOAD</name>
+                    <value>2</value>
+                </enumerator>
+                <enumerator>
+                    <name>LOADING</name>
+                    <value>3</value>
+                </enumerator>
+                <enumerator>
+                    <name>UNLOADING</name>
+                    <value>4</value>
+                </enumerator>
+            </enumeratedData>
+        </enumeratedDataTypes>
+        <arrayDataTypes>
+            <arrayData>
+                <name>PositionCollection</name>
+                <dataType>PositionVector</dataType>
+                <cardinality>Dynamic</cardinality>
+                <encoding>HLAvariableArray</encoding>
+                <semantics></semantics>
+            </arrayData>
+        </arrayDataTypes>
+        <fixedRecordDataTypes/>
+        <variantRecordDataTypes/>
+    </dataTypes>
+    <notes/>
+</objectModel>

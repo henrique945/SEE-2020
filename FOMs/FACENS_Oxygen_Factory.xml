@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<objectModel xsi:schemaLocation="http://standards.ieee.org/IEEE1516-2010 http://standards.ieee.org/downloads/1516/1516.2-2010/IEEE1516-DIF-2010.xsd" xmlns="http://standards.ieee.org/IEEE1516-2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelIdentification>
+        <name>Oxygen_Factory</name>
+        <type>FOM</type>
+        <version>1.0</version>
+        <securityClassification>unclassified</securityClassification>
+        <purpose></purpose>
+        <applicationDomain></applicationDomain>
+        <description>This is the Oxygen_Factory</description>
+        <useLimitation></useLimitation>
+        <other></other>
+    </modelIdentification>
+    <objects>
+        <objectClass>
+            <name>HLAobjectRoot</name>
+            <objectClass>
+                <name>PhysicalEntity</name>
+                <objectClass>
+                    <name>FACENS_Oxygen_Factory</name>
+                    <sharing>PublishSubscribe</sharing>
+                    <semantics>The Oxygen Factory - The FACENS /Brazil</semantics>
+                    <attribute>
+                        <name>Max_Water_Volume</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the level of water in the Oxygen Factory, the unit used is Liters (L)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Current_Water_Volume</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the actual level of water in the Oxygen Factory, the unit used is Liters (L)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Max_Oxygen_Volume</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the maximum level of O2 in the Factory, the unit is Liters (L)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Current_Oxygen_Volume</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the current level of O2 in the Factory, the unit is Liters (L)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Max_Raw_Material_Volume</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the maximum of raw material volume of the factory, the unit is cubic meter  (m^3)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Current_Raw_Material_Volume</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the current of raw material volume of the factory, the unit is cubic meter  (m^3)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Energy_Consumption</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>The unit is Kw/h</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Oxygen_Production</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the production of O2 per hour, the unit is cubic meter per hour (m^3/h)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Factory_Area</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Static</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the area of the factory, the unity is square meters (m^2)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Factory_Volume</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the volume of the factory, the unit is cubic meters (m^3)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Temperature</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the temperature of the factory, the unit is Kelvin (K)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Pressure</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This is the pressure of the facory, the unit is milibars (mBar)</semantics>
+                    </attribute>
+                    <attribute>
+                        <name>Factory_Humidity</name>
+                        <dataType>HLAfloat64LE</dataType>
+                        <updateType>Periodic</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics>This id the humidity of the factory, the unity is per cent (%)</semantics>
+                    </attribute>
+                </objectClass>
+                <objectClass>
+                    <name>FACENS_Oxygen_Factory_Rooftop</name>
+                    <sharing>Neither</sharing>
+                    <semantics></semantics>
+                    <attribute>
+                        <name>rooftopStatus</name>
+                        <dataType>RooftopStatus</dataType>
+                        <updateType>NA</updateType>
+                        <updateCondition></updateCondition>
+                        <ownership>NoTransfer</ownership>
+                        <sharing>PublishSubscribe</sharing>
+                        <transportation>HLAreliable</transportation>
+                        <order>Receive</order>
+                        <semantics></semantics>
+                    </attribute>
+                </objectClass>
+            </objectClass>
+        </objectClass>
+    </objects>
+    <interactions>
+        <interactionClass>
+            <name>HLAinteractionRoot</name>
+        </interactionClass>
+    </interactions>
+    <switches>
+        <autoProvide isEnabled="false"/>
+        <conveyRegionDesignatorSets isEnabled="false"/>
+        <conveyProducingFederate isEnabled="false"/>
+        <attributeScopeAdvisory isEnabled="false"/>
+        <attributeRelevanceAdvisory isEnabled="false"/>
+        <objectClassRelevanceAdvisory isEnabled="false"/>
+        <interactionRelevanceAdvisory isEnabled="false"/>
+        <serviceReporting isEnabled="false"/>
+        <exceptionReporting isEnabled="false"/>
+        <delaySubscriptionEvaluation isEnabled="false"/>
+        <automaticResignAction resignAction="CancelThenDeleteThenDivest"/>
+    </switches>
+    <dataTypes>
+        <simpleDataTypes/>
+        <enumeratedDataTypes/>
+        <arrayDataTypes/>
+        <fixedRecordDataTypes/>
+        <variantRecordDataTypes/>
+    </dataTypes>
+    <notes/>
+</objectModel>

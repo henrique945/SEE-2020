@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<constants>
+	<constant id="BATTERY_LEVEL">
+		<value>100</value>
+	</constant>
+	<constant id="MASS">
+		<value>899.00</value>
+	</constant>
+	<constant id="TOTAL_TUBES">
+		<value>50</value>
+	</constant>
+	<constant id="REMAINING_TUBES">
+		<value>0</value>
+	</constant>
+	<constant id="LENGTH">
+		<value>3</value>
+	</constant>
+	<constant id="WIDTH">
+		<value>2.70</value>
+	</constant>
+	<constant id="HEIGHT">
+		<value>2.20</value>
+	</constant>
+
+</constants>

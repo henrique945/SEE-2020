@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<constants>
+	<constant id="AIRLOCK">
+		<value>100.00</value>
+	</constant>
+	<constant id="AIR_HUMIDITY">
+		<value>200.00</value>
+	</constant>
+	<constant id="OXYGEN_VOLUME_INITIAL">
+		<value>1296100.00</value>
+	</constant>
+	<constant id="OXYGEN_MINIMUM_VOLUME">
+		<value>1296095.00</value>
+	</constant>
+	<constant id="CARBON_DIOXIDE_VOLUME_INITIAL">
+		<value>22681750</value>
+	</constant>
+	<constant id="CARBON_DIOXIDE_MAXIMUM_VOLUME">
+		<value>22681900</value>
+	</constant>
+	<constant id="BASE_OXYGEN_CONSUMPTION">
+		<value>0.00</value>
+	</constant>
+	<constant id="ASTRONAUT_OXYGEN_CONSUMPTION">
+		<value>0.13</value>
+	</constant>
+	<constant id="ASTRONAUT_CARBON_DIOXIDE_EMISSION">
+		<value>0.13</value>
+	</constant>
+	<constant id="PRESSURE">
+		<value>101325</value>
+	</constant>
+	<constant id="TEMPERATURE">
+		<value>27.5</value>
+	</constant>
+	<constant id="AREA">
+		<value>1834.75</value>
+	</constant>
+	<constant id="VOLUME">
+		<value>6480.50</value>
+	</constant>
+	<constant id="MAXIMUS">
+		<value>6</value>
+	</constant>
+	<constant id="INITIAL_CALORIES">
+		<value>3600000</value>
+	</constant>
+	<constant id="MINIMUM_CALORIES">
+		<value>3599500</value>
+	</constant>
+
+</constants>

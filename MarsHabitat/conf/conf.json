@@ -1,0 +1,15 @@
+{
+  "asynchronousDelivery" : true,
+  "crcHost" : "localhost",
+  "crcPort" : 8989,
+  "federateName" : "FACENS_Mars_Habitat",
+  "federateType" : "Luha",
+  "federateRole" : "LATE",
+  "federationName" : "SEE 2019",
+  "fomDirectory" : "../../FOMs",
+  "realtime" : false,
+  "simulationScenarioTimeEphoc" : "17131.83333333334",
+  "timeConstrained" : true,
+  "timeRegulating" : false,
+  "lookahead": 1000000
+}
