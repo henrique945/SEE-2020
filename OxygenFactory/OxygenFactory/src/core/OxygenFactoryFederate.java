@@ -150,7 +150,7 @@ public class OxygenFactoryFederate extends SEEAbstractFederate implements Observ
 		// 1. configure the SKF framework
 		super.configure(config);
 
-		// 2. Connect on RTI
+		// 2. Connect on RTI!!!
 		/*
 		 * For MAK local_settings_designator = ""; For PITCH local_settings_designator =
 		 * "crcHost=" + <crc_host> + "\ncrcPort=" + <crc_port>;
