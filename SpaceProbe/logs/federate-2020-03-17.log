@@ -1,0 +1,37 @@
+2020-03-17 00:00:33.039 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2020-03-17 00:00:33.086 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2020-03-17 00:00:33.365 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2020-03-17 00:00:33.442 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2020-03-17 00:00:34.851 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2020-03-17 00:00:34.858 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2020 '.
+2020-03-17 00:00:35.394 [prti1516e: LRC[0x63070bab] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2020-03-17 00:00:35.409 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2020-03-17 00:00:35.412 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2020-03-17 00:00:35.473 [main] INFO  skf.core.SEEHLAModule - The Object ' facens_space_probe, state=null, battery_level=null, temperature=-30.0, length=null, width=null, height=null, position=Position [x=100.0- y=500.0- z=800.0] ' has been published.
+2020-03-17 00:00:35.475 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' MoonCentricFixed ' ReferenceFrame
+2020-03-17 00:00:35.490 [prti1516e: LRC[0x63070bab] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1102>, ObjectClassHandle: objectClass<8>, Name: EarthFixed, FederateHandle: null
+2020-03-17 00:00:35.520 [prti1516e: LRC[0x63070bab] Federate service] ERROR skf.core.SEEAbstractFederateAmbassador - Can't find the FrameType: EarthFixed
+2020-03-17 23:34:56.379 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2020-03-17 23:34:56.430 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2020-03-17 23:34:56.906 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2020-03-17 23:34:57.040 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2020-03-17 23:34:59.046 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2020-03-17 23:34:59.054 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2020 '.
+2020-03-17 23:34:59.865 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2020-03-17 23:34:59.867 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2020-03-17 23:34:59.902 [prti1516e: LRC[0x06ab778a] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2020-03-17 23:34:59.951 [main] INFO  skf.core.SEEHLAModule - The Object ' facens_space_probe, state=null, battery_level=null, temperature=-30.0, length=null, width=null, height=null, position=Position [x=100.0- y=500.0- z=800.0] ' has been published.
+2020-03-17 23:34:59.954 [main] INFO  skf.core.SEEHLAModule - Subscribing the ' MoonCentricFixed ' ReferenceFrame
+2020-03-17 23:34:59.975 [prti1516e: LRC[0x06ab778a] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<1102>, ObjectClassHandle: objectClass<8>, Name: EarthFixed, FederateHandle: null
+2020-03-17 23:34:59.977 [prti1516e: LRC[0x06ab778a] Federate service] ERROR skf.core.SEEAbstractFederateAmbassador - Can't find the FrameType: EarthFixed
+2020-03-17 23:59:26.067 [main] INFO  skf.core.SEEAbstractFederateAmbassador - SEEAbstractFederateAmbassador Costruttore
+2020-03-17 23:59:26.101 [main] INFO  skf.config.ConfigurationFactory - Importing the SFK configuration file
+2020-03-17 23:59:26.356 [main] INFO  skf.core.SEEHLAModule - Connecting to HLA/RTI.
+2020-03-17 23:59:26.442 [main] INFO  skf.core.SEERTIAmbassador - Vendor HLA/RTI: name:pRTI 1516, rtiVersion: v5.4.2, hlaVersion: HLA IEEE 1516-2010
+2020-03-17 23:59:28.246 [main] INFO  skf.core.SEEHLAModule - Loading FOMs modules.
+2020-03-17 23:59:28.253 [main] INFO  skf.core.SEEHLAModule - Join the federate ' FACENS_Space_Probe ' into the Federation execution ' SEE 2020 '.
+2020-03-17 23:59:28.984 [prti1516e: LRC[0x6a03bcb1] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - Synchronization point announced: INITIALIZATION_COMPLETED
+2020-03-17 23:59:28.994 [main] INFO  skf.core.SEEHLAModule - Asynchronous delivery enabled.
+2020-03-17 23:59:28.997 [main] INFO  skf.core.SEEHLAModule - Subscribed to the Subject
+2020-03-17 23:59:29.031 [main] INFO  skf.core.SEEHLAModule - The ObjectClass 'class skf.model.object.executionConfiguration.ExecutionConfiguration' has been subscribed.
+2020-03-17 23:59:29.044 [prti1516e: LRC[0x6a03bcb1] Federate service] INFO  skf.core.SEEAbstractFederateAmbassador - ObjectInstanceHandle: instance<102>, ObjectClassHandle: objectClass<9>, Name: ExCO, FederateHandle: null

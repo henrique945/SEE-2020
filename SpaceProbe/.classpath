@@ -6,7 +6,6 @@
 	<classpathentry kind="lib" path="lib/prti.jar"/>
 	<classpathentry kind="lib" path="lib/prti1516e.jar"/>
 	<classpathentry kind="lib" path="lib/prticore.jar"/>
-	<classpathentry kind="lib" path="lib/skf1.4.0.jar"/>
 	<classpathentry kind="lib" path="lib/skf1.5.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

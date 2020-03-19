@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_92" class="java.beans.XMLDecoder">
+ <int>5</int>
+ <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentProject">
+  <boolean>true</boolean>
+  <string>New Project</string>
+  <boolean>true</boolean>
+  <boolean>true</boolean>
+  <boolean>true</boolean>
+  <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentDefaults">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>se.pitch.vomt2.model.OrderType</class>
+    <string>RECEIVE</string>
+   </object>
+   <object class="java.lang.Enum" method="valueOf">
+    <class>se.pitch.vomt2.model.TransportationType</class>
+    <string>HLA_RELIABLE</string>
+   </object>
+   <object class="java.lang.Enum" method="valueOf">
+    <class>se.pitch.vomt2.model.Ownership</class>
+    <string>NO_TRANSFER</string>
+   </object>
+  </object>
+  <object class="java.util.ArrayList">
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentModule" id="PersistentProjectHelper$PersistentModule0">
+     <string>MIM</string>
+     <string>HLAstandardMIM.xml</string>
+     <boolean>true</boolean>
+     <boolean>false</boolean>
+     <boolean>true</boolean>
+     <boolean>true</boolean>
+     <object class="java.util.ArrayList"/>
+     <boolean>true</boolean>
+     <boolean>true</boolean>
+     <object class="java.awt.Color">
+      <int>253</int>
+      <int>180</int>
+      <int>98</int>
+      <int>255</int>
+     </object>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentModule" id="PersistentProjectHelper$PersistentModule1">
+     <string>FACENS_Excavation_Mine</string>
+     <string>FACENS_Excavation_Mine.xml</string>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <boolean>true</boolean>
+     <boolean>true</boolean>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>4</int>
+      </void>
+     </object>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <object class="java.awt.Color">
+      <int>177</int>
+      <int>221</int>
+      <int>250</int>
+      <int>255</int>
+     </object>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentModule" id="PersistentProjectHelper$PersistentModule2">
+     <string>FACENS_Oxygen_Factory</string>
+     <string>FACENS_Oxygen_Factory.xml</string>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <boolean>true</boolean>
+     <boolean>true</boolean>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>4</int>
+      </void>
+     </object>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <object class="java.awt.Color">
+      <int>204</int>
+      <int>235</int>
+      <int>197</int>
+      <int>255</int>
+     </object>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentModule" id="PersistentProjectHelper$PersistentModule3">
+     <string>SISO_SpaceFOM_datatypes</string>
+     <string>SISO_SpaceFOM_datatypes.xml</string>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <boolean>true</boolean>
+     <boolean>true</boolean>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>7</int>
+      </void>
+     </object>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <object class="java.awt.Color">
+      <int>251</int>
+      <int>128</int>
+      <int>114</int>
+      <int>255</int>
+     </object>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentModule" id="PersistentProjectHelper$PersistentModule4">
+     <string>SISO_SpaceFOM_entity</string>
+     <string>SISO_SpaceFOM_entity.xml</string>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <boolean>true</boolean>
+     <boolean>true</boolean>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>5</int>
+      </void>
+     </object>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <object class="java.awt.Color">
+      <int>211</int>
+      <int>207</int>
+      <int>238</int>
+      <int>255</int>
+     </object>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentModule" id="PersistentProjectHelper$PersistentModule5">
+     <string>SISO_SpaceFOM_environment</string>
+     <string>SISO_SpaceFOM_environment.xml</string>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <boolean>true</boolean>
+     <boolean>true</boolean>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>3</int>
+      </void>
+     </object>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <object class="java.awt.Color">
+      <int>255</int>
+      <int>237</int>
+      <int>111</int>
+      <int>255</int>
+     </object>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentModule" id="PersistentProjectHelper$PersistentModule6">
+     <string>SISO_SpaceFOM_management</string>
+     <string>SISO_SpaceFOM_management.xml</string>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <boolean>true</boolean>
+     <boolean>true</boolean>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>3</int>
+      </void>
+     </object>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <object class="java.awt.Color">
+      <int>179</int>
+      <int>222</int>
+      <int>105</int>
+      <int>255</int>
+     </object>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentModule" id="PersistentProjectHelper$PersistentModule7">
+     <string>SISO_SpaceFOM_switches</string>
+     <string>SISO_SpaceFOM_switches.xml</string>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <boolean>true</boolean>
+     <boolean>true</boolean>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>0</int>
+      </void>
+     </object>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <object class="java.awt.Color">
+      <int>226</int>
+      <int>172</int>
+      <int>227</int>
+      <int>255</int>
+     </object>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentModule" id="PersistentProjectHelper$PersistentModule8">
+     <string>FACENS_Water_Finder</string>
+     <string>FACENS_Water_Finder.xml</string>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <boolean>true</boolean>
+     <boolean>true</boolean>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>4</int>
+      </void>
+     </object>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <object class="java.awt.Color">
+      <int>255</int>
+      <int>255</int>
+      <int>179</int>
+      <int>255</int>
+     </object>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentModule" id="PersistentProjectHelper$PersistentModule9">
+     <string>FACENS_Mars_Miner</string>
+     <string>FACENS_Mars_Miner.xml</string>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <boolean>true</boolean>
+     <boolean>true</boolean>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>4</int>
+      </void>
+     </object>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <object class="java.awt.Color">
+      <int>141</int>
+      <int>211</int>
+      <int>199</int>
+      <int>255</int>
+     </object>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentModule" id="PersistentProjectHelper$PersistentModule10">
+     <string>FACENS_Space_Elevator</string>
+     <string>FACENS_Space_Elevator.xml</string>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <boolean>true</boolean>
+     <boolean>true</boolean>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>4</int>
+      </void>
+     </object>
+     <boolean>false</boolean>
+     <boolean>false</boolean>
+     <object class="java.awt.Color">
+      <int>252</int>
+      <int>205</int>
+      <int>229</int>
+      <int>255</int>
+     </object>
+    </object>
+   </void>
+  </object>
+  <null/>
+  <null/>
+  <null/>
+  <null/>
+  <object class="java.util.LinkedHashSet">
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentView">
+     <boolean>true</boolean>
+     <object class="java.lang.Enum" id="TableType0" method="valueOf">
+      <class>se.pitch.vomt2.model.TableType</class>
+      <string>OBJECT_CLASS_TABLE</string>
+     </object>
+     <object idref="PersistentProjectHelper$PersistentModule2"/>
+     <int>5</int>
+     <int>65</int>
+     <int>1048</int>
+     <int>469</int>
+     <object class="java.util.LinkedHashSet"/>
+     <object class="java.util.Collections" id="Collections$EmptySet0" method="emptySet"/>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentView">
+     <boolean>true</boolean>
+     <object class="java.lang.Enum" method="valueOf">
+      <class>se.pitch.vomt2.model.TableType</class>
+      <string>INTERACTION_CLASS_TABLE</string>
+     </object>
+     <object idref="PersistentProjectHelper$PersistentModule9"/>
+     <int>0</int>
+     <int>0</int>
+     <int>1064</int>
+     <int>401</int>
+     <object idref="Collections$EmptySet0"/>
+     <object class="java.util.LinkedHashSet"/>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentView">
+     <boolean>true</boolean>
+     <object idref="TableType0"/>
+     <object idref="PersistentProjectHelper$PersistentModule10"/>
+     <int>0</int>
+     <int>0</int>
+     <int>1058</int>
+     <int>539</int>
+     <object class="java.util.LinkedHashSet"/>
+     <object idref="Collections$EmptySet0"/>
+    </object>
+   </void>
+   <void method="add">
+    <object class="se.pitch.vomt2.model.PersistentProjectHelper$PersistentView">
+     <boolean>true</boolean>
+     <object class="java.lang.Enum" method="valueOf">
+      <class>se.pitch.vomt2.model.TableType</class>
+      <string>IDENTIFICATION_TABLE</string>
+     </object>
+     <object idref="PersistentProjectHelper$PersistentModule10"/>
+     <int>5</int>
+     <int>85</int>
+     <int>1048</int>
+     <int>449</int>
+     <object idref="Collections$EmptySet0"/>
+     <object idref="Collections$EmptySet0"/>
+    </object>
+   </void>
+  </object>
+  <object class="java.util.LinkedHashSet">
+   <void method="add">
+    <object idref="PersistentProjectHelper$PersistentModule0"/>
+   </void>
+   <void method="add">
+    <object idref="PersistentProjectHelper$PersistentModule1"/>
+   </void>
+   <void method="add">
+    <object idref="PersistentProjectHelper$PersistentModule3"/>
+   </void>
+   <void method="add">
+    <object idref="PersistentProjectHelper$PersistentModule4"/>
+   </void>
+   <void method="add">
+    <object idref="PersistentProjectHelper$PersistentModule5"/>
+   </void>
+   <void method="add">
+    <object idref="PersistentProjectHelper$PersistentModule6"/>
+   </void>
+   <void method="add">
+    <object idref="PersistentProjectHelper$PersistentModule7"/>
+   </void>
+   <void method="add">
+    <object idref="PersistentProjectHelper$PersistentModule8"/>
+   </void>
+   <void method="add">
+    <object idref="PersistentProjectHelper$PersistentModule9"/>
+   </void>
+  </object>
+  <boolean>false</boolean>
+ </object>
+</java>

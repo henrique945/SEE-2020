@@ -4,7 +4,7 @@ import org.apache.commons.math3.complex.Quaternion;
 import org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
 import org.siso.spacefom.frame.SpaceTimeCoordinateState;
 
-import coder.HLAPositionCoder;
+//import coder.HLAPositionCoder;
 import coder.SpaceTimeCoordinateStateCoder;
 import skf.coder.HLAfloat64LECoder;
 import skf.coder.HLAunicodeStringCoder;
@@ -25,52 +25,22 @@ public class SpaceProbe {
 
 	@Attribute(name = "type", coder = HLAunicodeStringCoder.class)
 	private String type = null;
-
-	@Attribute(name = "battey_level", coder = HLAfloat64LECoder.class)
-	private Double battery_level = null;
 	
 	@Attribute(name = "temperature", coder = HLAfloat64LECoder.class)
 	private Double temperature = null;
-
-	@Attribute(name = "length", coder = HLAfloat64LECoder.class)
-	private Double length = null;
-
-	@Attribute(name = "width", coder = HLAfloat64LECoder.class)
-	private Double width = null;
-
-	@Attribute(name = "height", coder = HLAfloat64LECoder.class)
-	private Double height = null;
 	
-	public SpaceProbe(String name, String parent_name, String type) {
+	public SpaceProbe() {
 		
-		this.name = name;
-		this.parent_name = parent_name;
-		this.type = type;		
-		this.isIdle();
-	}
-	
-	public SpaceProbe(String name, String parent_name, String type, Position position) {
-		
-		this.name = name;
-		this.parent_name = parent_name;
-		this.type = type;		
-		this.setPosition(position);		
-		this.isIdle();
 	}
 
-	public SpaceProbe(String name, String parent_name, String type, Double battery_level, Double temperature, 
-			Double length, Double width, Double height, Position position) {
+	public SpaceProbe(String name, Quaternion quaternion, String parent_name, String type, Position position) {
 		
 		this.name = name;
 		this.parent_name = parent_name;
 		this.type = type;
-		this.state = null;
+		this.state = new SpaceTimeCoordinateState();
 		this.setPosition(position);
-		this.battery_level = battery_level;
-		this.temperature = temperature;
-		this.length = length;
-		this.width = width;
-		this.height = height;
+		this.state.getRotationState().setAttitudeQuaternion(quaternion);
 		this.isIdle();
 	}
 	
@@ -109,15 +79,7 @@ public class SpaceProbe {
 	public void setType(String type) {
 		this.type = type;
 	}
-
-	public Double getBattery_level() {
-		return battery_level;
-	}
-
-	public void setBattery_level(Double battery_level) {
-		this.battery_level = battery_level;
-	}
-
+	
 	public Double getTemperature() {
 		return temperature;
 	}
@@ -126,30 +88,6 @@ public class SpaceProbe {
 		this.temperature = temperature;
 	}
 
-	public Double getLength() {
-		return length;
-	}
-
-	public void setLength(Double length) {
-		this.length = length;
-	}
-
-	public Double getWidth() {
-		return width;
-	}
-
-	public void setWidth(Double width) {
-		this.width = width;
-	}
-
-	public Double getHeight() {
-		return height;
-	}
-
-	public void setHeight(Double height) {
-		this.height = height;
-	}
-	
 	/**
 	 * @return the position
 	 */
@@ -159,9 +97,8 @@ public class SpaceProbe {
 	}
 
 	public Position getPosition() {
-		//Vector3D vector3d = state.getTranslationalState().getPosition();
-		//return new Position(vector3d.getX(), vector3d.getY(), vector3d.getZ());
-		return new Position(100, 500, 800);
+		Vector3D vector3d = state.getTranslationalState().getPosition();
+		return new Position(vector3d.getX(), vector3d.getY(), vector3d.getZ());
 	}
 	
 	public void setRotation(String value) {
@@ -184,8 +121,7 @@ public class SpaceProbe {
 
 	@Override
 	public String toString() {
-		return name + ", state=" + state + ", battery_level=" + battery_level + ", temperature=" + temperature + ", length="
-				+ length + ", width=" + width + ", height=" + height + ", position=" + getPosition();
-	}	
-	
+		return "SpaceProbe [name=" + name + ", parent_name=" + parent_name + ", state=" + state + ", type=" + type
+				+ ", temperature=" + temperature + "]";
+	}
 }
