@@ -2,6 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/facens/Desktop/SEE2020/DON-Federate-HLA2MPC-master/Common/lib/prti1516e.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/facens/Desktop/SEE2020/DON-Federate-HLA2MPC-master/Common/lib/prti1516e.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
