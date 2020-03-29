@@ -6,7 +6,6 @@ import java.util.Scanner;
 import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;
 
-import constant.SpaceRocketConstant;
 import core.SpaceRocketFederate;
 import core.SpaceRocketFederateAmbassador;
 import hla.rti1516e.exceptions.AttributeNotDefined;
@@ -32,7 +31,6 @@ import hla.rti1516e.exceptions.RestoreInProgress;
 import hla.rti1516e.exceptions.SaveInProgress;
 import hla.rti1516e.exceptions.UnsupportedCallbackModel;
 import model.Position;
-import model.SpaceRocketLauncher;
 import model.SpaceRocket;
 import skf.config.ConfigurationFactory;
 import skf.exception.PublishException;
@@ -45,17 +43,15 @@ public class SpaceRocketMain {
 	private static Scanner sc = null;
 	
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, ConnectionFailed, InvalidLocalSettingsDesignator, UnsupportedCallbackModel, CallNotAllowedFromWithinCallback, RTIinternalError, CouldNotCreateLogicalTimeFactory, FederationExecutionDoesNotExist, InconsistentFDD, ErrorReadingFDD, CouldNotOpenFDD, SaveInProgress, RestoreInProgress, NotConnected, MalformedURLException, FederateNotExecutionMember, InstantiationException, IllegalAccessException, NameNotFound, InvalidObjectClassHandle, AttributeNotDefined, ObjectClassNotDefined, InvalidInteractionClassHandle, InteractionClassNotDefined, InteractionClassNotPublished, InteractionParameterNotDefined, SubscribeException, InterruptedException, UnsubscribeException, PublishException, IOException {
-		
 			
 		//ROCKET
-		SpaceRocketLauncher rocket = new SpaceRocketLauncher("FACENS_SpaceRocket", 
-				siso.smackdown.frame.FrameType.AitkenBasinLocalFixed.toString(), "Space Elevator Launcher", 
-				new Position(SpaceRocketConstant.LAUNCHER_LOWEST_POSITION.getX(), 
-						SpaceRocketConstant.LAUNCHER_LOWEST_POSITION.getY(),
-						SpaceRocketConstant.LAUNCHER_LOWEST_POSITION.getZ()));
+		SpaceRocket spaceRocket = new SpaceRocket("FACENS_SpaceRocket", 
+				siso.smackdown.frame.FrameType.AitkenBasinLocalFixed.toString(), "SpaceRocket", 
+				new Position(100, 500, 800));
+		
 		
 		SpaceRocketFederateAmbassador ambassador = new SpaceRocketFederateAmbassador();
-		SpaceRocketFederate federate = new SpaceRocketFederate(ambassador, SpaceRocket, rocket);
+		SpaceRocketFederate federate = new SpaceRocketFederate(ambassador, spaceRocket);
 				
 		federate.configureAndStart(new ConfigurationFactory().importConfiguration(conf));
 		
@@ -69,14 +65,11 @@ public class SpaceRocketMain {
 			if (currValue.equals("u")) {
 				federate.requestBringUp();
 			}
-			// if 'd' is pressed, the Launcher go move Down
-			if (currValue.equals("d")) {
-				federate.requestDown();
-			}
-			// if 'c' to lost the control of the Launcher or gain
+			// maybe can set to rocket to zero again
+			/**
 			if (currValue.equals("c")) {
 				federate.changeControle();
-			}
+			}*/
 		}
 
 

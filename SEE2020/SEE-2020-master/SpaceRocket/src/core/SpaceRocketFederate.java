@@ -34,6 +34,7 @@ import hla.rti1516e.exceptions.RTIinternalError;
 import hla.rti1516e.exceptions.RestoreInProgress;
 import hla.rti1516e.exceptions.SaveInProgress;
 import hla.rti1516e.exceptions.UnsupportedCallbackModel;
+import model.Position;
 import model.SpaceRocket;
 import siso.smackdown.frame.FrameType;
 import skf.config.Configuration;
@@ -187,5 +188,14 @@ public class SpaceRocketFederate extends SEEAbstractFederate implements Observer
 		System.out.println("---------------------- Space Rocket ------------------------------");
 		System.out.println("**** Update controle for " + control + " ****");
 	}
+	
+	public void requestBringUp() {
+		Position curr_pos = this.spaceRocket.getPosition();
+		
+		//launch rocket
+		curr_pos.setX(curr_pos.getY()+20); // update the Y coordinate
+		this.spaceRocket.setPosition(curr_pos);
+	}
+
 
 }
