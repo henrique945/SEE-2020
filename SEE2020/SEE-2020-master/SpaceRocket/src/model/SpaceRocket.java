@@ -37,16 +37,12 @@ public class SpaceRocket {
 	public SpaceRocket(){}
 	
 	public SpaceRocket(String name, String parent_name, String type,
-			Double power_supply, Double power_consumption, Double battery_level,
 			Position position) {
 		super();
 		this.name = name;
 		this.parent_name = parent_name;
 		this.state = new SpaceTimeCoordinateState();
 		this.type = type;
-		this.battery_level = battery_level;
-		this.power_consumption = power_consumption;
-		this.power_supply = power_supply;
 		this.state.getRotationState().setAttitudeQuaternion(new Quaternion(0, 0, -0.7071, -0.7071));
 		this.setPosition(position);
 	}
@@ -83,30 +79,6 @@ public class SpaceRocket {
 		this.type = type;
 	}
 
-	public Double getPower_supply() {
-		return power_supply;
-	}
-
-	public void setPower_supply(Double power_supply) {
-		this.power_supply = power_supply;
-	}
-
-	public Double getPower_consumption() {
-		return power_consumption;
-	}
-
-	public void setPower_consumption(Double power_consumption) {
-		this.power_consumption = power_consumption;
-	}
-
-	public Double getBattery_level() {
-		return battery_level;
-	}
-
-	public void setBattery_level(Double battery_level) {
-		this.battery_level = battery_level;
-	}
-	
 	public void setPosition(Position position) {
 		Vector3D vector3d = new Vector3D(position.getX(), position.getY(), position.getZ());
 		this.state.getTranslationalState().setPosition(vector3d);
@@ -121,8 +93,7 @@ public class SpaceRocket {
 	@Override
 	public String toString() {
 		return "SpaceRocket [name=" + name + ", parent_name=" + parent_name + ", state=" + state + ", type=" + type
-				+ ", power_supply=" + power_supply + ", power_consumption=" + power_consumption + ", battery_level="
-				+ battery_level + "]";
+				+ "]";
 	}
 	
 	

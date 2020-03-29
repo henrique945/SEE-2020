@@ -1,7 +1,7 @@
 package move;
 
 
-import constant.SpaceElevatorConstant;
+import constant.SpaceRocketConstant;
 import model.Position;
 import model.SpaceRocketLauncher;
 
@@ -11,10 +11,10 @@ public class LauncherDown implements LauncherAction{
 		public boolean move(SpaceRocketLauncher spaceElevatorLauncher) {
 			
 			Position position = spaceElevatorLauncher.getPosition();
-			position.setZ(position.getZ() - SpaceElevatorConstant.DISPLACEMENT);
+			position.setZ(position.getZ() - SpaceRocketConstant.DISPLACEMENT);
 			spaceElevatorLauncher.setPosition(position);
 			System.out.println("Moving down:" + position);
-			return position.getZ() == SpaceElevatorConstant.LAUNCHER_LOWEST_POSITION.getZ();
+			return position.getZ() == SpaceRocketConstant.LAUNCHER_LOWEST_POSITION.getZ();
 		}
 		
 }

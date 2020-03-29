@@ -6,7 +6,7 @@ import java.util.Scanner;
 import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;
 
-import constant.SpaceElevatorConstant;
+import constant.SpaceRocketConstant;
 import core.SpaceRocketFederate;
 import core.SpaceRocketFederateAmbassador;
 import hla.rti1516e.exceptions.AttributeNotDefined;
@@ -50,9 +50,9 @@ public class SpaceRocketMain {
 		//ROCKET
 		SpaceRocketLauncher rocket = new SpaceRocketLauncher("FACENS_SpaceRocket", 
 				siso.smackdown.frame.FrameType.AitkenBasinLocalFixed.toString(), "Space Elevator Launcher", 
-				new Position(SpaceElevatorConstant.LAUNCHER_LOWEST_POSITION.getX(), 
-						SpaceElevatorConstant.LAUNCHER_LOWEST_POSITION.getY(),
-						SpaceElevatorConstant.LAUNCHER_LOWEST_POSITION.getZ()));
+				new Position(SpaceRocketConstant.LAUNCHER_LOWEST_POSITION.getX(), 
+						SpaceRocketConstant.LAUNCHER_LOWEST_POSITION.getY(),
+						SpaceRocketConstant.LAUNCHER_LOWEST_POSITION.getZ()));
 		
 		SpaceRocketFederateAmbassador ambassador = new SpaceRocketFederateAmbassador();
 		SpaceRocketFederate federate = new SpaceRocketFederate(ambassador, SpaceRocket, rocket);

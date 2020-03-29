@@ -34,10 +34,7 @@ import hla.rti1516e.exceptions.RTIinternalError;
 import hla.rti1516e.exceptions.RestoreInProgress;
 import hla.rti1516e.exceptions.SaveInProgress;
 import hla.rti1516e.exceptions.UnsupportedCallbackModel;
-import model.LauncherStatus;
 import model.SpaceRocket;
-import model.SpaceRocketLauncher;
-import move.LauncherStates;
 import siso.smackdown.frame.FrameType;
 import skf.config.Configuration;
 import skf.core.SEEAbstractFederate;
@@ -62,15 +59,11 @@ public class SpaceRocketFederate extends SEEAbstractFederate implements Observer
 	private SimpleDateFormat format = null;
 	
 	private SpaceRocket spaceRocket = null;
-	private SpaceRocketLauncher launcher = null;
-	private LauncherStates launcherState = LauncherStates.IDLE;
 	
 	private boolean control = true;
 	
-	public SpaceRocketFederate(SEEAbstractFederateAmbassador seefedamb, SpaceRocket spaceElevator, 
-			SpaceRocketLauncher launcher) {
+	public SpaceRocketFederate(SEEAbstractFederateAmbassador seefedamb, SpaceRocket spaceRocket) {
 		super(seefedamb);
-		this.launcher = launcher;
 		this.spaceRocket = spaceRocket;
 		this.mtr = new ModeTransitionRequest();
 		
@@ -116,7 +109,6 @@ public class SpaceRocketFederate extends SEEAbstractFederate implements Observer
 			
 			try {
 				super.publishElement(spaceRocket, spaceRocket.getName());
-				super.publishElement(launcher, launcher.getName());
 			}catch (IllegalName | ObjectInstanceNameInUse | ObjectInstanceNameNotReserved | ObjectClassNotPublished
 					| AttributeNotOwned | ObjectInstanceNotKnown | UpdateException e) {
 				// TODO Auto-generated catch block
@@ -178,7 +170,6 @@ public class SpaceRocketFederate extends SEEAbstractFederate implements Observer
 	protected void doAction() {
 		
 		try {
-			super.updateElement(this.launcher);
 			super.updateElement(this.spaceRocket);
 			
 		} catch (FederateNotExecutionMember | NotConnected | AttributeNotOwned | AttributeNotDefined
@@ -189,16 +180,6 @@ public class SpaceRocketFederate extends SEEAbstractFederate implements Observer
 		}
 		
 		System.out.println("Space Rocket: " + spaceRocket);
-		System.out.println("Launcher: " + launcher);
-		
-		if (launcherState.getValue().move(launcher)) {
-			if (launcher.getLauncherStatus().equals(LauncherStatus.MOVING_DOWN)) {
-				launcher.setLauncherStatus(LauncherStatus.STOPPED_DOWN);
-			} else if (launcher.getLauncherStatus().equals(LauncherStatus.MOVING_UP)) {
-				launcher.setLauncherStatus(LauncherStatus.STOPPED_UP);
-			}
-			launcherState = LauncherStates.IDLE;
-		}
 	}
 	
 	public void changeControle() {
@@ -207,18 +188,4 @@ public class SpaceRocketFederate extends SEEAbstractFederate implements Observer
 		System.out.println("**** Update controle for " + control + " ****");
 	}
 
-	public void requestBringUp() {
-		if (control && launcher.getLauncherStatus().equals(LauncherStatus.STOPPED_DOWN)) {
-			launcherState = LauncherStates.UP;
-			launcher.setLauncherStatus(LauncherStatus.MOVING_UP);
-		}
-	}
-
-	public void requestDown() {
-
-		if (control && launcher.getLauncherStatus().equals(LauncherStatus.STOPPED_UP)) {
-			launcherState = LauncherStates.DOWN;
-			launcher.setLauncherStatus(LauncherStatus.MOVING_DOWN);
-		}
-	}
 }
