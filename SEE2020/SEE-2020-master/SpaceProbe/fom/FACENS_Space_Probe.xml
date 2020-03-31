@@ -20,7 +20,7 @@
                 <objectClass>
                     <name>FACENS_Space_Probe</name>
                     <sharing>PublishSubscribe</sharing>
-                    <semantics>The Space Probe - The FACENS /Brazil</semantics>
+                    <semantics>The Space Probe - The FACENS/Brazil</semantics>
                     <attribute>
                         <name>battey_level</name>
                         <dataType>HLAfloat64LE</dataType>

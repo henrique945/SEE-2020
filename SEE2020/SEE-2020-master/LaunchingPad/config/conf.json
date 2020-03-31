@@ -1,0 +1,15 @@
+{
+  "asynchronousDelivery" : true,
+  "crcHost" : "localhost",
+  "crcPort" : 8989,
+  "federateName" : "FACENS_Launching_Pad",
+  "federateType" : "SPEL",
+  "federateRole" : "LATE",
+  "federationName" : "SEE 2020",
+  "fomDirectory" : "fom",
+  "realtime" : false,
+  "simulationScenarioTimeEphoc" : 17131.83333333334,
+  "timeConstrained" : true,
+  "timeRegulating" : false,
+  "lookahead": 1000000
+}
