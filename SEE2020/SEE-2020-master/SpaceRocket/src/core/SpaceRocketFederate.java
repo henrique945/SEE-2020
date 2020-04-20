@@ -73,6 +73,7 @@ public class SpaceRocketFederate extends SEEAbstractFederate implements Observer
 		// TODO Auto-generated constructor stub
 	}
 	
+	@SuppressWarnings("unchecked")
 	public void configureAndStart(Configuration config) throws ConnectionFailed, InvalidLocalSettingsDesignator, UnsupportedCallbackModel, CallNotAllowedFromWithinCallback, RTIinternalError, CouldNotCreateLogicalTimeFactory, 
 	FederationExecutionDoesNotExist, InconsistentFDD, ErrorReadingFDD, CouldNotOpenFDD, SaveInProgress, RestoreInProgress, NotConnected, MalformedURLException, FederateNotExecutionMember, InstantiationException, 
 	IllegalAccessException, NameNotFound, InvalidObjectClassHandle, AttributeNotDefined, ObjectClassNotDefined, SubscribeException, InterruptedException, UnsubscribeException, InvalidInteractionClassHandle, InteractionClassNotDefined, InteractionClassNotPublished, InteractionParameterNotDefined, PublishException {
@@ -82,6 +83,8 @@ public class SpaceRocketFederate extends SEEAbstractFederate implements Observer
 		super.connectToRTI(LOCAL_SETTINGS_DESIGNATOR);
 		super.joinFederationExecution();
 		super.subscribeSubject(this);
+		
+		System.out.println("oi");
 		
 		if(!SynchronizationPoint.INITIALIZATION_STARTED.isAnnounced()){
 			

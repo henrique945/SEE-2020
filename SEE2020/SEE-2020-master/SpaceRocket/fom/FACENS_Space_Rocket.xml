@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <objectModel xsi:schemaLocation="http://standards.ieee.org/IEEE1516-2010 http://standards.ieee.org/downloads/1516/1516.2-2010/IEEE1516-DIF-2010.xsd" xmlns="http://standards.ieee.org/IEEE1516-2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelIdentification>
-        <name>Space Rocket</name>
+        <name>Space Probe</name>
         <type>FOM</type>
         <version>1.0</version>
         <modificationDate>2020-02-21</modificationDate>
         <securityClassification>unclassified</securityClassification>
         <purpose></purpose>
         <applicationDomain></applicationDomain>
-        <description>Description of Space_Probe</description>
+        <description>Description of Space_Rocket</description>
         <useLimitation></useLimitation>
         <other></other>
     </modelIdentification>
@@ -20,7 +20,7 @@
                 <objectClass>
                     <name>FACENS_Space_Probe</name>
                     <sharing>PublishSubscribe</sharing>
-                    <semantics>The Space Probe - The FACENS /Brazil</semantics>
+                    <semantics>The Space Rocket - The FACENS/Brazil</semantics>
                     <attribute>
                         <name>battey_level</name>
                         <dataType>HLAfloat64LE</dataType>
